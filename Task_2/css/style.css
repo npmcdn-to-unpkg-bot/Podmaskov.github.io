@@ -1,0 +1,32 @@
+body{
+  background-color: grey;
+
+}
+img.logo{
+display: block;
+margin: 0px 868px 40px 0px;
+  }
+.main{
+  width: 1060px;
+  margin: 0 auto 0 auto;
+  background-color: white;
+}
+.content{
+  margin:45px;
+  padding-top: 50px;
+}
+ul.menu_1{
+  background-color: #4f4e4e;
+  height: 40px;
+}
+ul.menu_1 li{
+  display: inline;
+  margin: 10px;
+  }
+ul.menu_2{
+  float: left;
+}
+img{
+  display: block;
+  margin-left: 335px;
+}
