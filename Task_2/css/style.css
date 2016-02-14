@@ -36,6 +36,8 @@ li {
 }
 .activ:hover {
   height: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
   background-color: #393939;
   border-right: 1px solid #838383;
   border-left: 1px solid #838383;;
