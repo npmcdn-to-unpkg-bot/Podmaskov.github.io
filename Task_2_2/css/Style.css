@@ -1,1 +1,84 @@
-ÿþ
+body {
+  background-color: #282828;
+  font-family: sans-serif;
+}
+.wraper {
+  background-image: url(../img/background.gif);
+  width: 822px;
+  height: 740px;
+  margin: auto;
+  padding-top: 133px;
+  padding-left: 66px;
+  padding-right: 70px;
+}
+p {
+  color: #ffffff;
+}
+p.slogan {
+  width: 255px;
+  text-align: center;
+  font-size: 10.16px;
+}
+p.contacts {
+  width: 93px;
+  margin-left: 716px;
+  font-size: 8.47px;
+  line-height: 10px;
+}
+p.contacts
+span {
+  font-size: 10.16px;
+  line-height: 15px;
+}
+.content {
+  padding-top: 15px;
+}
+.left {
+  float: left;
+  height: 452px;
+  width: 268px;
+}
+.left p {
+  margin-bottom: 52px;
+  text-align: center;
+  font-size: 15.24px;
+
+}
+.left img {
+  border: 3px solid #9d9d9d;
+  border-radius: 2px;
+
+}
+.right {
+  float: right;
+  height: 452px;
+  width: 268px;
+}
+.right p {
+  margin-bottom: 52px;
+  text-align: center;
+  font-size: 15.24px;
+}
+.right img {
+  border: 3px solid #9d9d9d;
+  border-radius: 2px;
+}
+.center {
+  height: 452px;
+  width: 268px;
+  margin-left: 278px;
+}
+.center p {
+  margin-bottom: 52px;
+  text-align: center;
+  font-size: 15.24px;
+}
+.center img {
+  border: 3px solid #9d9d9d;
+  border-radius: 2px;
+}
+p.copy  {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 10.16px;
+}
