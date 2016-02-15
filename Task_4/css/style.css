@@ -4,21 +4,82 @@ body {
 .main{
   width: 998px;
   margin: auto;
+  padding-top: 10px;
   background-color: #ffffff;
+  position: relative;
   }
+  /*Heder*/
   .contacts {
     width: 128px;
     margin-left: 841px;
+    font-size: 12px;
+    color: #128aa7;
   }
   .logo{
     float: left;
   }
+  .slogan{
+    position: absolute;
+    left: 78px;
+    top: 100px;
+    font-size: 12px;
+    color: #128aa7;
+  }
 .contries {
-  width: 600px;
+  width: 333px;
   height: 60px;
-  margin-left: 665px;
+  margin-left: 650px;
+  margin-top: 35px;
 }
-.contries img {
-  display: inline-block;
 
+.india,
+.nepal,
+.tibet,
+.butan,
+.sri_lanka,
+.maldiv {
+  display: inline-block;
+  width: 50px;
+  font-size: 10px;
+  text-align: center;
+}
+.india a,
+.nepal a,
+.tibet a,
+.butan a,
+.sri_lanka a,
+.maldiv a {
+  color: #128aa7;
+}
+/*Navigation*/
+ul{
+  list-style: none;
+}
+ul li{
+  float: left;
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  background: #303030;
+  padding: 0 5px;
+}
+ul li ul {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  margin: 0px;
+  width: 300px;
+  background: #303030;
+  border: 1px solid black;
+}
+ul li ul li {
+  float: none;
+  display: block;
+  background: none;
+}
+ul li:hover ul{
+  display: block;
 }
