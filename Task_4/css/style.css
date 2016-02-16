@@ -1,5 +1,6 @@
 body {
   background-image: url(../img/background.gif);
+  font-family: sans-serif;
 }
 .main{
   width: 998px;
@@ -7,6 +8,7 @@ body {
   padding-top: 10px;
   background-color: #ffffff;
   position: relative;
+  box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
   }
   /*Heder*/
   .contacts {
@@ -17,6 +19,7 @@ body {
   }
   .logo{
     float: left;
+    margin-left: 20px;
   }
   .slogan{
     position: absolute;
@@ -26,10 +29,10 @@ body {
     color: #128aa7;
   }
 .contries {
-  width: 333px;
+  width: 342px;
   height: 60px;
-  margin-left: 650px;
-  margin-top: 35px;
+  margin-left: 617px;
+  margin-top: 24px;
 }
 
 .india,
@@ -39,7 +42,7 @@ body {
 .sri_lanka,
 .maldiv {
   display: inline-block;
-  width: 50px;
+  width: 53px;
   font-size: 10px;
   text-align: center;
 }
@@ -52,28 +55,41 @@ body {
   color: #128aa7;
 }
 /*Navigation*/
+nav {
+  width: 998px;
+  height: 40px;
+  background-color: #303030;
+  color: #ffffff;
+  margin-top: 0;
+  border-bottom: 1px solid black;
+}
+.simvol {
+  font-size: 8px;
+}
 ul{
   list-style: none;
+  margin-top: -20px;
 }
 ul li{
   float: left;
   height: 20px;
-  margin-right: 20px;
+  margin-right: 54px;
   cursor: pointer;
   position: relative;
   z-index: 1;
   background: #303030;
-  padding: 0 5px;
+  padding-top: 10px;
 }
 ul li ul {
   display: none;
   position: absolute;
-  left: 0px;
-  top: 20px;
+  left: -10px;
+  top: 40px;
   margin: 0px;
-  width: 300px;
+  padding-left: 10px;
+  width: 170px;
   background: #303030;
-  border: 1px solid black;
+  box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
 }
 ul li ul li {
   float: none;
@@ -82,4 +98,56 @@ ul li ul li {
 }
 ul li:hover ul{
   display: block;
+
+}
+/*Content*/
+.wraper {
+  width: 998px;
+  overflow: hidden;
+}
+.content_left {
+  width: 250px;
+  float: left;
+  background-color: #edeef0;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  padding-left: 15px;
+  padding-right: 25px;
+  border-right: 1px solid #c7cacf;
+}
+.content_center {
+  width: 498px;
+  float: left;
+  background-color: #ffffff;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.content_right {
+  width: 250px;
+  float: right;;
+  background-color: #edeef0;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  padding-left: 15px;
+  padding-right: 25px;
+  border-left: 1px solid #c7cacf;
+}
+h2 {
+  font-size: 18px;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+/*Footer*/
+.footer {
+  padding-top: 10px;
+  width: 998px;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+  color: #cee3ec;
+  border-top: 3px solid black;
 }
