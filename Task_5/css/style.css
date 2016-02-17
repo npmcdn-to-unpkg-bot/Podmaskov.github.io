@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'helveticaneuecyrlight';
+    src: url(../font/'helveticaneuecyr-light-webfont.eot');
+    src: url(../font/'helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../font/'helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url(../font/'helveticaneuecyr-light-webfont.woff') format('woff'),
+         url(../font/'helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: 'helveticaneuecyrlight';
+}
+.wrap {
+  background-image: url(../img/background.gif);
+  background-size: 100%;
+}
+/*Navigation*/
+nav {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 213px;
+  background-color: #085292;
+  height: 35px;
+}
+ul {
+  width: 70%;
+  margin-left: 47%;
+}
+ul li {
+  float: left;;
+  margin-left: 5px;
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ul li:hover  {
+  background-color: #4eabda;
+}
+li:hover a{
+  color: #fff;
+}
+ul li a {
+  color: #60b5ed;
+}
+.minhas,
+.ola {
+  float: left;
+  color: #fff;
+}
+.minhas {
+  border-left: 1px solid #60b5ed;
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.ola {
+  border-left: 1px solid #60b5ed;
+  border-right: 1px solid #60b5ed;
+  background-color: #4aa6d8;
+  height: 35px;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.ola a {
+  color: #fff;
+  text-decoration: underline;
+}
+/*Content*/
+h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  background-color: rgba(69, 72, 63, 0.5);
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+div.form {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  padding-top: 35px;
+  background-color: rgba(69, 72, 63, 0.5);
+  text-align: center;
+}
+div.form img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px
+  
+}
