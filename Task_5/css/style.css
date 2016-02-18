@@ -1,15 +1,16 @@
 @font-face {
-    font-family: 'helveticaneuecyrlight';
-    src: url(../font/'helveticaneuecyr-light-webfont.eot');
-    src: url(../font/'helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url(../font/'helveticaneuecyr-light-webfont.woff2') format('woff2'),
-         url(../font/'helveticaneuecyr-light-webfont.woff') format('woff'),
-         url(../font/'helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-family: 'helvetica_neueregular';
+    src: url('../font/helveticaneue-thin-webfont.eot');
+    src: url('../font/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../font/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../font/helveticaneue-thin-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+
 }
 body {
-  font-family: 'helveticaneuecyrlight';
+  font-family: 'helvetica_neueregular';
 }
 .wrap {
   background-image: url(../img/background.gif);
@@ -99,6 +100,7 @@ button.facebook {
   background-color: #2e4c7e;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 div.f {
   float: left;
@@ -165,7 +167,6 @@ div.text input:hover{
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-
 }
 button {
   margin-top: 15px;
@@ -174,6 +175,9 @@ button {
   border: 1px solid #307cc5;
   border-radius: 4px;
   color: #fff;
+}
+.pointer {
+  cursor: pointer;
 }
 .footer {
   margin-top: 15px;
