@@ -88,12 +88,37 @@ h1{
   font-size: 24px;
   color: #fff;
 }
-.form a {
-  display: block;
+/*button*/
+button.facebook {
   width: 270px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 35px;
+  margin-bottom: 35px;
+  margin-left: 1px;
+  overflow: hidden;
+  padding: 0;
+  background-color: #2e4c7e;
+  border-radius: 5px;
+  border: none;
 }
+div.f {
+  float: left;
+  border-right: 1px solid #203b70;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  font-variant: inherit;
+  font-size: 23px;
+}
+div.facebook_2 {
+    padding-top: 10px;
+    border-top: 1px solid #7689b4;
+}
+div.bold,
+span.bold {
+  font-weight: bold;
+  font-size: 15px;
+}
+/*botton end*/
 div.form {
   width: 60%;
   margin-left: auto;
