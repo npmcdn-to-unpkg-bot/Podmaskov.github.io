@@ -53,8 +53,13 @@ ul li a {
   border-left: 1px solid #60b5ed;
   height: 35px;
   padding-top: 5px;
-  padding-left: 18px;
+  padding-left: 5px;
   padding-right: 18px;
+}
+.minhas img {
+  display: block;
+  float: left;
+  margin-right: 5px;
 }
 .ola {
   border-left: 1px solid #60b5ed;
@@ -84,7 +89,7 @@ h1{
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
-  background-color: rgba(69, 72, 63, 0.8);
+  background-color: rgba(69, 72, 63, 0.5);
   text-align: center;
   font-size: 24px;
   color: #fff;
@@ -121,6 +126,15 @@ span.bold {
   font-size: 15px;
 }
 /*botton end*/
+div.ou {
+  color: #999;
+  font-size: 14px;
+}
+.ou img{
+  position: absolute;
+  left: 536px;
+  top: 280px;
+}
 div.form {
   width: 60%;
   margin-left: auto;
@@ -128,7 +142,7 @@ div.form {
   margin-bottom: auto;
   margin-top: 2px;
   padding-top: 35px;
-  background-color: rgba(69, 72, 63, 0.8);
+  background-color: rgba(69, 72, 63, 0.5);
   text-align: center;
 }
 
@@ -152,6 +166,7 @@ div.text input {
   border: none;
   border-bottom: 1px solid #484847;
   color: #fff;
+  font-family: 'helvetica_neueregular';
 }
 div.text input:hover{
   background-color: #1b5288;
