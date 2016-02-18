@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'lucida_sans_unicoderegular';
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot');
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+  font-family: 'lucida_sans_unicoderegular';
+}
+.wrap {
+  width: 908px;
+  padding-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*heder*/
+.wrap_login {
+  position: relative;
+  overflow: hidden;
+}
+/*Левая часть*/
+.phone {
+  float: left;
+  width: 290px;
+}
+/*Центральная часть*/
+.login {
+  float: left;
+  width: 494px;
+  height: 27px;
+  padding-top: 3px;
+  font-size: 11px;
+  background-color: #114064;
+}
+.login input {
+  width: 112px;
+  height: 18px;
+  font-size: 11px;
+}
+.login img {
+  float: left;
+  display: block;
+  height: 18px;
+  margin-left: 7px;
+  margin-right: 3px;
+  margin-top: 4px;
+}
+.login a {
+  display: inline-block;
+  color: #fff;
+}
+.border_right {
+  border-right: 1px solid #fff;
+  margin-left: 6px;
+  padding-right: 3px;
+
+}
+/*Правая часть*/
+
+.icon {
+  float: left;
+  width: 75px;
+}
