@@ -145,3 +145,13 @@ ul li a {
   color: #0d5a8f;
   font-size: 12px;
 }
+/*Form*/
+.form {
+  height: 135px;
+  border: 1px solid black;
+}
+/*Левая колонка*/
+.aside_left {
+  float: left;
+  width: 182px;
+}
