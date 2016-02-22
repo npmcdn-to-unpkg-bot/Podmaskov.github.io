@@ -226,8 +226,17 @@ nav ul li a {
   margin-top: 2px;
   margin-left: 36px;
   color: #114165;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 13px;
+  font-family: 'lucida_sans_unicoderegular';
+  line-height: 11px;
+}
+.aside_left a:hover {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: underline;
+
 }
 /*Диски*/
 .diski {
@@ -274,13 +283,13 @@ nav ul li a {
   width: 190px;
 }
 .brands {
-  height: 21px;
+  height: 19px;
   width: 150px;
   background-image: url(../img/icon_1.png);
   background-repeat: no-repeat;
   font-size: 13px;
-  line-height: 18px;
-  margin-left: 12px;
+  line-height: 14px;
+  margin: 3px 0 0 10px;
   padding-top: 6px;
   padding-left: 31px;
   color: #114165;
@@ -321,7 +330,13 @@ nav ul li a {
   margin: 5px 0 6px 0;
 }
 button {
-  margin: 19px 0 0 41px;
+  margin: 16px 0 0 34px;
+  height: 25px;
+  width: 80px;
+  color: #fff;
+  background-color: #154b6d;
+  border: none;
+  border-radius: 20px;
 }
 
 /*Центральная часть*/
@@ -333,17 +348,97 @@ button {
 }
 .item_goodyer_1 {
   position: absolute;
-  left: 24px;
+  left: 22px;
   top: 8px;
 }
+.title_goodyer_1,
+.title_goodyer_2,
+.title_goodyer_3 {
+  margin: 7px 0 -5px 35px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'lucida_sans_unicoderegular';
+  color: #206988;
+}
+.title_nokian_1,
+.title_nokian_2,
+.title_nokian_3 {
+  margin: 7px 0 -5px 45px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'lucida_sans_unicoderegular';
+  color: #206988;
+}
+.title_hankook_1,
+.title_hankook_2,
+.title_hankook_3 {
+  margin: 7px 0 -5px 39px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'lucida_sans_unicoderegular';
+  color: #206988;
+}
+
+.model_goodyer_1,
+.model_goodyer_2,
+.model_goodyer_3 {
+  margin: 1px 0 -2px 14px;
+  font-size: 13px;
+  font-family: 'lucida_sans_unicoderegular';
+}
+.model_nokian_1,
+.model_nokian_2,
+.model_nokian_3 {
+  margin: 1px 0 -3px 23px;
+  font-size: 13px;
+  font-family: 'lucida_sans_unicoderegular';
+}
+.model_hankook_1,
+.model_hankook_2,
+.model_hankook_3 {
+  margin: 1px 0 -3px 10px;
+  font-size: 13px;
+  font-family: 'lucida_sans_unicoderegular';
+}
+.price_goodyear_1,
+.price_goodyear_2,
+.price_goodyear_3 {
+  margin: 3px 0 0 39px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  color: #114165;
+}
+.price_nokian_1,
+.price_nokian_2,
+.price_nokian_3 {
+  margin: 4px 0 0 34px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  color: #114165;
+}
+.price_hankook_1,
+.price_hankook_2,
+.price_hankook_3 {
+  margin: 4px 0 0 33px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  color: #114165;
+}
+
 .item_goodyer_2 {
   position: absolute;
-  left: 24px;
+  left: 22px;
   top: 210px;
 }
 .item_goodyer_3 {
   position: absolute;
-  left: 24px;
+  left: 22px;
   top: 414px;
 }
 .item_nokian_1 {
@@ -375,4 +470,48 @@ button {
   position: absolute;
   left: 359px;
   top: 414px;
+}
+/*Footer*/
+.brands_footer {
+  clear: both;
+  margin-left: 116px;
+  padding-top: 38px;
+}
+.footer_backgraund {
+  height: 100px;
+  margin-top: 25px;
+  background-image: url(../img/footer_backgraund.png);
+}
+.footer_backgraund_a {
+  margin-left: 298px;
+  margin-top: 0;
+}
+
+
+.footer_backgraund a {
+  display: inline-block;
+  height: 6px;
+  line-height: 1px;
+  margin-top: 14px;
+  padding: 5px 10px 0 11px;
+  color: #bec6c9;
+  text-decoration: none;
+  border-left: 1px solid #bec6c9;
+  font-family: Arial;
+  font-size: 12px;
+
+}
+.footer_backgraund a:hover {
+  color: #52abcb;
+}
+a.border_none {
+  border: none;
+}
+.footer_backgraund_slogan {
+  margin: 10px 0 0 376px;
+  padding: 0 0 0 0;
+  color: #6c4444;
+  font-family: Arial;
+  font-size: 10px;
+
 }
