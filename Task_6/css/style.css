@@ -172,6 +172,56 @@ nav ul li a {
   border: 1px solid black;
   margin-top: 11px;
 }
+.search-car {
+  position: relative;
+  overflow: hidden;
+}
+.search-car__title {
+  position: relative;
+  overflow: hidden;
+}
+.search-car__title-diski,
+.search-car__title-search,
+.search-car__title-shini {
+float: left;
+color: #154467;
+font-weight: bold;
+font-family: Arial sans-serif;
+}
+.search-car__title-diski,
+.search-car__title-shini {
+  font-size: 10px;
+}
+.search-car__title-diski {
+  margin: 0 0 0 0;
+}
+.search-car__title-search {
+  margin: 0 0 0 0;
+  font-size: 12px;
+}
+.search-car__title-shini {
+    margin: 0 0 0 0;
+}
+
+.search-car p {
+  font-size: 10px;
+  font-family: Arial sans-serif;
+}
+.search-car__colum-1,
+.search-car__colum-2 {
+  float: left;
+  width: 178px;
+}
+.search-car__colum-tytles1,
+.search-car__colum-tytles2{
+  float: left;
+  width: 70px;
+}
+.search-car__colum-1-select {
+  float: left;
+  width: 105px;
+}
+
 .content {
   margin-top: 12px;
 }
