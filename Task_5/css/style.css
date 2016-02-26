@@ -168,7 +168,7 @@ div.text input {
   color: #fff;
   font-family: 'helvetica_neueregular';
 }
-div.text input:hover{
+div.text input:focus{
   background-color: #1b5288;
   border-radius: 4px;
   box-shadow: 0px 0px 21px 1px rgba(104,155,204,1);

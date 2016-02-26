@@ -168,13 +168,19 @@ nav ul li a {
 }
 /*Form*/
 .form {
-  height: 135px;
+  height: 161px;
   border: 1px solid black;
-  margin-top: 11px;
+
 }
+/*search-car*/
 .search-car {
-  position: relative;
-  overflow: hidden;
+  float: left;
+  width: 413px;
+  height: 133px;
+  border: 1px solid #999999;
+  border-radius: 20px;
+  margin: 11px 0 0 3px;
+
 }
 .search-car__title {
   position: relative;
@@ -190,17 +196,20 @@ font-family: Arial sans-serif;
 }
 .search-car__title-diski,
 .search-car__title-shini {
-  font-size: 10px;
+  font-size: 11px;
+}
+.search-car__colum-tytles1 {
+  margin: 4px 0 0 16px;
 }
 .search-car__title-diski {
-  margin: 0 0 0 0;
+  margin: 0 0 0 20px;
 }
 .search-car__title-search {
-  margin: 0 0 0 0;
-  font-size: 12px;
+  margin: 0 0 0 70px;
+  font-size: 15px;
 }
 .search-car__title-shini {
-    margin: 0 0 0 0;
+    margin: 0 0 0 72px;
 }
 
 .search-car p {
@@ -210,16 +219,68 @@ font-family: Arial sans-serif;
 .search-car__colum-1,
 .search-car__colum-2 {
   float: left;
-  width: 178px;
+  width: 200px;
 }
 .search-car__colum-tytles1,
 .search-car__colum-tytles2{
   float: left;
-  width: 70px;
+  width: 76px;
+}
+.search-car__colum-tytles2 {
+  margin: 4px 0 0 21px;
 }
 .search-car__colum-1-select {
   float: left;
   width: 105px;
+}
+.search-car__select-markcar1,
+.search-car__select-modelcar1,
+.search-car__equipment1,
+.search-car__select-markcar2,
+.search-car__select-modelcar2,
+.search-car__equipment2 {
+  width: 101px;
+  height: 16px;
+  margin-top: 3px;
+  font-size: 10px;
+}
+.search-car__year-car1,
+.search-car__year-car2 {
+  width: 56px;
+  height: 16px;
+  margin: 5px 0 -2px 0;
+  font-size: 10px;
+}
+.search-car__model-car1,
+.search-car__year-car1,
+.search-car__model-car2,
+.search-car__year-car2 {
+  line-height: 10px;
+}
+.search-car__equipment1,
+.search-car__equipment2 {
+  margin-top: 8px;
+}
+
+.search-car__button button {
+  margin: 2px 0 0 327px;
+  background: none;
+  border: none;
+  color: #154467;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: underline;
+}
+/*search-car-end*/
+/*serch-shini*/
+.search-shini {
+  float: left;
+  width: 193px;
+  height: 133px;
+  margin: 0 0 0 0;
+  border: 1px solid #999999;
+  border-radius: 20px; 
+
 }
 
 .content {
