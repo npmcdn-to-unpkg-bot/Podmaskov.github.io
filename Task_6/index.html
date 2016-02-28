@@ -41,11 +41,11 @@
     </header>
     <nav>
       <ul>
-        <li> <a href="#">О КОМПАНИ</a></li>
-        <li> <a href="#">ОПЛАТА</a></li>
-        <li> <a href="#">ДОСТАВКА</a></li>
-        <li> <a href="#">СТАТЬИ</a></li>
-        <li> <a href="#">КОНТАКТЫ</a></li>
+        <li class="ferstli"> <a href="#">О КОМПАНИ</a></li>
+        <li class="secondli"> <a href="#">ОПЛАТА</a></li>
+        <li class="secondli"> <a href="#">ДОСТАВКА</a></li>
+        <li class="secondli"> <a href="#">СТАТЬИ</a></li>
+        <li class="secondli"> <a href="#">КОНТАКТЫ</a></li>
       </ul>
       <div class="wrap_order">
         <div class="bag">
@@ -78,11 +78,11 @@
 
         <div class="search-car__colum-1">
           <div class="search-car__colum-tytles1">
-            <p class="search-car__mark-car1"> Марка <span class="grey">авто:<span>
+            <p class="search-car__mark-car1"> Марка <span class="grey">авто:</span>
             </p>
-            <p class="search-car__model-car1"> Модель <br> <span class="grey">автомобиля:<span>
+            <p class="search-car__model-car1"> Модель <br> <span class="grey">автомобиля:</span>
             </p>
-            <p class="search-car__year-car1">Год выпуска <br> <span class="grey">автомобиля:<span>
+            <p class="search-car__year-car1">Год выпуска <br> <span class="grey">автомобиля:</span>
             </p>
             <p class="search-car__equipment1"> Комплектация:
             </p>
@@ -125,11 +125,11 @@
 
         <div class="search-car__colum-2">
           <div class="search-car__colum-tytles2">
-            <p class="search-car__mark-car2"> Марка <span class="grey">авто:<span>
+            <p class="search-car__mark-car2"> Марка <span class="grey">авто:</span>
             </p>
-            <p class="search-car__model-car2"> Модель <br> <span class="grey">автомобиля:<span>
+            <p class="search-car__model-car2"> Модель <br> <span class="grey">автомобиля:</span>
             </p>
-            <p class="search-car__year-car2">Год выпуска <br> <span class="grey">автомобиля:<span>
+            <p class="search-car__year-car2">Год выпуска <br> <span class="grey">автомобиля:</span>
             </p>
             <p class="search-car__equipment2"> Комплектация:
             </p>
@@ -176,36 +176,84 @@
     </div>
 
     <div class="search-shini">
-      <p class="search-shini__title">поиск шин</p>
-        
-          <p class="search-shini__row1">Размер
-              <select class="search-shini__rowselect1" name="rowselect">
-                <option value="Пункт 1">Пункт 1</option>
-                <option value="Пункт 2">Пункт 2</option>
-                <option value="Пункт 3">Пункт 3</option>
-              </select>
-              /
-              <select class="search-shini__rowselect2" name="rowselect2">
-                <option value="Пункт 1">Пункт 1</option>
-                <option value="Пункт 2">Пункт 2</option>
-                <option value="Пункт 3">Пункт 3</option>
-              </select>
-              R
-              <select class="search-shini__rowselect2" name="rowselect2">
-                <option value="Пункт 1">Пункт 1</option>
-                <option value="Пункт 2">Пункт 2</option>
-                <option value="Пункт 3">Пункт 3</option>
-              </select>
-          </p>
+      <p class="search-shini__heder">поиск шин</p>
 
-        <div class="search-shini__row1">
-
+        <div class="search-shini__colum1">
+          <p class="search-shini__title1">Размер:</p>
+          <p class="search-shini__title2">R</p>
+          <p class="search-shini__title3">Сезон:</p>
         </div>
+
+        <div class="search-shini__colum2">
+
+          <select class="search-shini__rowselect1" name="rowselect">
+            <option value="Пункт 1">Пункт 1</option>
+            <option value="Пункт 2">Пункт 2</option>
+            <option value="Пункт 3">Пункт 3</option>
+          </select>
+          /
+          <select class="search-shini__rowselect2" name="rowselect2">
+            <option value="Пункт 1">Пункт 1</option>
+            <option value="Пункт 2">Пункт 2</option>
+            <option value="Пункт 3">Пункт 3</option>
+          </select>
+
+          <select class="search-shini__rowselect2" name="rowselect2">
+            <option value="Пункт 1">Пункт 1</option>
+            <option value="Пункт 2">Пункт 2</option>
+            <option value="Пункт 3">Пункт 3</option>
+          </select>
+          <div class="search-shini__checkbox">
+            <p><label><input type="checkbox" name="leto" value="Лето">лето</label></p>
+            <p><label><input type="checkbox" name="leto" value="Лето">зима</label></p>
+            <p><label><input type="checkbox" name="leto" value="Лето">всесез</label></p>
+          </div>
+        </div>
+        <div class="search-shini__button">
+          <button  type="submit" name="button"> поиск...</button>
+          </div>
     </div>
+      <div class="search-diski">
+
+          <p class="search-diski__heder">поиск дисков</p>
+
+        <div class="search-diski__colum1">
+          <p> Диаметр <span class="grey2">диска:</span>
+          </p>
+          <p> Количество <span class="grey2"> крепёжных отверстий: </span>
+          </p>
+          <p class="diametr"> Диаметр  <span class="grey2">расположения крепёжных отверстий:  </span>
+          </p>
+        </div>
+        <div class="search-diski__colum2">
+          <select class="search-diski__select1" name="select">
+            <option value="Пункт 1">14</option>
+          </select>
+          <select class="search-diski__select2" name="select">
+            <option value="Пункт 1">3</option>
+          </select>
+          <select class="search-diski__select3" name="select">
+            <option value="Пункт 1">12</option>
+          </select>
+        </div>
+
+        <div class="search-diski__colum3">
+          <p> ДЦО <br> <span class="grey3">(диаметр центрального отверстия):</span></p>
+          <select class="search-diski__colum3select1" name="select">
+            <option value="Пункт 1">12</option>
+          </select>
+            <p> ЕТ <br><span class="grey3">(вылет диска):</span></p>
+            <select class="search-diski__colum3select2" name="select">
+              <option value="Пункт 1">12</option>
+            </select>
+        </div>
+        <div class="search-diski__button">
+          <button  type="submit" name="button"> поиск...</button>
+          </div>
 
 
-  </div>
-    <div class="content clearfix">
+      </div>
+    <div class="content">
       <aside class="aside_left">
         <p class="prodacts">КАТАЛОГ ПРОДУКЦИИ:</p>
           <div class="shini">
@@ -407,5 +455,6 @@
           </div>
       </footer>
   </div>
+</div>
 </body>
 </html>
