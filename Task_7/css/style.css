@@ -26,11 +26,9 @@ header {
   font-size: 48px;
   font-family: 'league_gothicregular',sans-serif;
 }
-.ER {
+.logo__ER {
   color: #533b5e;
 }
-
-
 
 nav {
   width: 40%;
@@ -48,4 +46,12 @@ nav li {
 }
 .menu a:hover {
 border-bottom: 2px solid #edbfff;
+}
+/*scrol*/
+.scrol-wrap {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(147, 137, 137, 0.5);
+  position: relative;
+  overflow: hidden;
 }
