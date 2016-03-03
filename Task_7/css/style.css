@@ -26,19 +26,28 @@ header {
   font-size: 48px;
   font-family: 'league_gothicregular',sans-serif;
 }
-.ER {
+.logo__ER {
   color: #533b5e;
 }
 
-
-
-nav {
-  width: 40%;
+.menu-wrap {
+  width: 964px;
+  padding-top: 70px;
   margin-left: auto;
   margin-right: auto;
 }
-nav li {
+.menu {
+  margin: 0 0 0 329px;
+}
+.menu__button {
+  margin: -4px 51px 0 0;
   float: left;
+  text-transform: uppercase;
+  }
+.menu__buttonlast {
+    margin: -4px 0 0 3px;
+    float: left;
+    text-transform: uppercase;
   }
 .menu a {
   color: #fff;
@@ -48,4 +57,44 @@ nav li {
 }
 .menu a:hover {
 border-bottom: 2px solid #edbfff;
+}
+/*Slayder*/
+.scrol-wrap {
+  height: 400px;
+  margin: 180px 0 0 0;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.scrol-wrap__pinter-left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.scrol-wrap__pinter-right {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.scrol-wrap__contentandphone {
+  width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scrol-wrap__content {
+  width: 509px;
+}
+.scrol-wrap__tytle1 {
+  font-size: 48px;
+  font-family: 'league_gothicregular',sans-serif;
+  color: #fff;
+}
+.scrol-wrap__tytle2 {
+  font-size: 24px;
+  font-family: 'league_gothicregular',sans-serif;
+  color: #edbfff;
+}
+.scrol-wrap__info {
+  font-family: 'league_gothicregular',sans-serif;
+  font-weight: 100;
+  color: #fff;
 }
