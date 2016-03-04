@@ -8,12 +8,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 header {
   width: 100%;
   height: 37%;
   background-image: url(../img/960/background_heder.jpg);
 
 }
+@media (min-width: 960px){
 .clearfix::after {
   content: "";
   display: table;
@@ -30,13 +33,25 @@ header {
   color: #533b5e;
 }
 
-nav {
-  width: 40%;
+
+.menu-wrap {
+  width: 964px;
+  padding-top: 70px;
   margin-left: auto;
   margin-right: auto;
 }
-nav li {
+.menu {
+  margin: 0 0 0 329px;
+}
+.menu__button {
+  margin: -4px 51px 0 0;
   float: left;
+  text-transform: uppercase;
+  }
+.menu__buttonlast {
+    margin: -4px 0 0 3px;
+    float: left;
+    text-transform: uppercase;
   }
 .menu a {
   color: #fff;
@@ -47,11 +62,54 @@ nav li {
 .menu a:hover {
 border-bottom: 2px solid #edbfff;
 }
-/*scrol*/
+/*Slayder*/
 .scrol-wrap {
-  width: 100%;
   height: 400px;
-  background-color: rgba(147, 137, 137, 0.5);
+  margin: 180px 0 0 0;
   position: relative;
-  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.scrol-wrap__pinter-left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.scrol-wrap__pinter-right {
+  position: absolute;
+  left: 1445px;
+  top: 178px;
+}
+.scrol-wrap__contentandphone {
+  width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scrol-wrap__content {
+  width: 509px;
+}
+.scrol-wrap__tytle1 {
+  padding: 97px 0 0 0;
+  font-size: 59px;
+  font-family: 'league_gothicregular',sans-serif;
+  color: #fff;
+}
+.scrol-wrap__tytle2 {
+  margin: 29px 0 0 0;
+  font-size: 32px;
+  font-family: 'league_gothicregular',sans-serif;
+  color: #edbfff;
+}
+.scrol-wrap__info {
+  margin: 13px 0 0 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'Open Sans',sans-serif;
+  color: #fff;
+}
+.scrol-wrap__phone {
+  position: absolute;
+  left: 810px;
+  top:-18px;
+
+}
 }
