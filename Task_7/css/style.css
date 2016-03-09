@@ -13,7 +13,7 @@
 header {
   padding-top: 70px;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     background: url(../img/960/background_heder.jpg) no-repeat center;
     height: 761px;
     margin-bottom: 0;
@@ -125,9 +125,9 @@ border-bottom: 2px solid #edbfff;
 }
 
 .scrol-wrap__phone {
-float: right;
+width: 271px;
 position: relative;
-margin: -18px 7.6% 0 0;
+margin: -18px 7.6% 0 63.8%;
 
 }
 .scrol-wrap__play {
@@ -143,7 +143,7 @@ margin: -18px 7.6% 0 0;
 }
 .slayder-button--starts {
   clear: both;
-  margin: 0px 0 0 191px;
+  margin: 0px 0 0 19.89%;
   padding-top: 16px;
 }
 .slayder-button_circle{
@@ -174,7 +174,7 @@ margin: -18px 7.6% 0 0;
 /*Pink-block*/
 .background-pink {
   height: 342px;
-  width: 100%;
+  max-width: 100%;
   background: linear-gradient(to top, #33253a, #745083);
   }
 .companywrap {
@@ -215,6 +215,7 @@ margin: -18px 7.6% 0 0;
 }
 a.company1__link  {
   display: block;
+  width: 56px;
   margin: 19px 0 0 71%;
   text-decoration: none;
   color: #fff;
@@ -260,6 +261,7 @@ a.company1__link:hover  {
 }
 a.company2__link  {
   display: block;
+  width: 56px;
   margin: 19px 0 0 73%;
   text-decoration: none;
   color: #fff;
@@ -273,8 +275,9 @@ a.company2__link:hover  {
 }
 /*company3*/
 .company3 {
+  box-sizing: border-box;
   float: left;
-  width: 23.43%;
+  max-width: 23.43%;
   position: relative;
   margin: 82px 0 0 11.45%;
 }
@@ -304,6 +307,7 @@ a.company2__link:hover  {
 }
 a.company3__link  {
   display: block;
+  width: 56px;
   margin: 19px 0 0 74%;
   text-decoration: none;
   color: #fff;
@@ -328,18 +332,18 @@ a.company3__link:hover  {
 }
 /*starts*/
 .starts {
+  box-sizing: border-box;
   float: left;
   position: relative;
   margin: 98px 0 0 2.18%;
   padding: 29px 0 0 39px;
   background-color: #fff;
-  width: 40.41%;
-  height: 244px;
+  max-width: 44.41%;
 }
 .starts::after {
   position: absolute;
-  left: 367px;
-  top: 273px;
+  right: 40px;
+  bottom: -20px;
   content: "";
   border: 10px solid transparent;
   border-top: 10px solid #fff;
@@ -366,6 +370,7 @@ a.company3__link:hover  {
 }
 .starts__paragraf {
 font-size: 14px;
+margin-bottom: 36px;
 font-family: 'Open Sans',sans-serif;
 word-spacing: 6px;
 line-height: 24px;
@@ -385,6 +390,7 @@ line-height: 24px;
   font-size: 30px;
 }
 .updates__paragraf {
+  width: 366px;
   margin: 22px 0 0 75px;
   position: relative;
   font-size: 16px;
@@ -393,6 +399,7 @@ line-height: 24px;
   line-height: 24px;
 }
 .updates__paragraflast {
+  width: 366px;
   margin: 13px 0 0 75px;
   position: relative;
   font-size: 16px;
@@ -404,6 +411,7 @@ line-height: 24px;
   font-weight: bold;
 }
 .updates__icon1 {
+
   width: 50px;
   height: 50px;
   position: absolute;
@@ -431,6 +439,7 @@ line-height: 24px;
     background-position: 0 -101px;
 }
 a.updates__link {
+  width: 90px;
   display: block;
   margin: 24px 0 0 354px;
   text-decoration: none;
@@ -461,14 +470,14 @@ a.updates__link {
   background-color: #ececec;
 }
 .grey-wrap {
-  width: 960px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 /*pigbuller*/
 .pigbuller {
   float: left;
-  width: 281px;
+  width: 29.27%;
   margin: 111px 0 0 0;
   padding-bottom: 94px;
 
@@ -500,8 +509,8 @@ a.updates__link {
 /*recent*/
 .recent {
   float: left;
-  width: 284px;
-  margin: 103px 0 0 54px;
+  width: 29.58%;
+  margin: 103px 0 0 5.62%;
 }
 .recent__title {
   margin: 0 0 14px 0;
@@ -519,8 +528,8 @@ a.updates__link {
 /*news*/
 .news {
   float: left;
-  width: 284px;
-  margin: 103px 0 0 54px;
+  width: 29.58%;
+  margin: 103px 0 0 5.62%;
 }
 .news__title {
   margin: 0 0 14px 0;
