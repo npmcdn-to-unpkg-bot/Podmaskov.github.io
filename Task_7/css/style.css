@@ -94,13 +94,13 @@ border-bottom: 2px solid #edbfff;
 }
 .scrol-wrap__pinter-right {
   position: absolute;
-  left: 1445px;
-  top: 178px;
+  left: 0px;
+  top: 0px;
 }
 
 .scrol-wrap__content {
   float: left;
-  width: 53.02%;
+  max-width: 53.02%;
   margin: 0 0 0 -3px;
 }
 .scrol-wrap__tytle1 {
@@ -337,7 +337,6 @@ a.company3__link:hover  {
   height: 244px;
 }
 .starts::after {
-  width: 0px;
   position: absolute;
   left: 367px;
   top: 273px;
