@@ -8,14 +8,16 @@
     font-weight: normal;
     font-style: normal;
 }
-
+.main-wrap {
+  overflow: hidden;
+}
 
 header {
   padding-top: 70px;
     position: relative;
     max-width: 100%;
     background: url(../img/960/background_heder.jpg) no-repeat center;
-    height: 761px;
+    height: 757px;
     margin-bottom: 0;
 }
 
@@ -27,12 +29,14 @@ header {
 /*Navigation*/
 .logo {
   float: left;
-  margin-left: -4px;
+  margin-top: -2px;
+  margin-left: -2px;
   color: #fff;
   font-size: 48px;
   font-family: 'league_gothicregular',sans-serif;
 }
 .logo__ER {
+  margin-left: -3px;
   color: #533b5e;
 }
 
@@ -44,6 +48,7 @@ header {
   margin-top: -5px;
 }
 .menu {
+  margin-top: -3px;
   float: right;
 }
 .menu--footer {
@@ -52,7 +57,7 @@ header {
   float: left;
 }
 .menu__button {
-  margin: -4px 51px 0 0;
+  margin: -4px 51px 0 1px;
   float: left;
   text-transform: uppercase;
   }
@@ -60,7 +65,7 @@ header {
     margin: -4px 41px 0 0;
     }
 .menu__buttonlast {
-    margin: -4px 0 0 3px;
+    margin: -4px 1px 0 3px;
     float: left;
     text-transform: uppercase;
   }
@@ -89,13 +94,13 @@ border-bottom: 2px solid #edbfff;
 }
 .scrol-wrap__pinter-left {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: -323px;
+  top: 195px;
 }
 .scrol-wrap__pinter-right {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  right: -323px;
+  top: 195px;
 }
 
 .scrol-wrap__content {
@@ -104,7 +109,7 @@ border-bottom: 2px solid #edbfff;
   margin: 0 0 0 -3px;
 }
 .scrol-wrap__tytle1 {
-  padding: 97px 0 0 0;
+  padding: 116px 0 0 1px;
   font-size: 59px;
   font-family: 'league_gothicregular',sans-serif;
   color: #fff;
@@ -605,7 +610,7 @@ a.updates__link {
 }
 .footer-designed {
   float: right;
-  margin: 49px 0 0 0;
+  margin: 52px 0 0 0;
   padding: 0 0 49px 0;
   color: #fff;
   font-size: 12px;
@@ -613,5 +618,20 @@ a.updates__link {
   word-spacing: -2px;
 }
 .footer-designed__bold {
+  margin: 0 2px 0 6px;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    display: block;
+    margin-top: -2px;
+    margin-left: -2px;
+    color: #fff;
+    font-size: 48px;
+    font-family: 'league_gothicregular',sans-serif;
+  }
+  .menu {
+    margin-top: 20px;
+    float: left;
+  }
 }
