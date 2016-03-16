@@ -1,0 +1,25 @@
+.transparent-background,
+.background-pink {
+ background:transparent;
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#808b8689,endColorstr=#808b8689);
+ zoom: 1;
+ }
+ .background-pink {
+  background:transparent;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF33253a,endColorstr=#FF33253a);
+  zoom: 1;
+  }
+  .grey-wrap {
+    overflow: hidden;
+  }
+  /*.pigbuller_for_ie8 {
+    float: left;
+    width: 28%;
+    margin: 111px 0 0 7px;
+    padding-bottom: 94px;
+  }*/
+    .footer-background {
+    overflow: hidden;
+    width: 100%;
+    background: url(../img/960/background_footer.jpg) no-repeat top center;
+  }

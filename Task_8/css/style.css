@@ -619,8 +619,7 @@ a.updates__link {
 /*footer*/
 .footer-background {
   width: 100%;
-  background-image: url(../img/960/background_footer.jpg);
-  background-position: center;
+  background: url(../img/960/background_footer.jpg) no-repeat top center;
 }
 .footer_wrap {
   max-width: 960px;
