@@ -10,24 +10,24 @@ var progrmmingTest = {
   body: document.body,
 // create <h1> tag
   addH1: function (nameTest) {
-    h1 = document.createElement('h1');
+    var h1 = document.createElement('h1');
     h1.classList.add('title');
     h1.innerHTML = nameTest || 'Тест по программированию';
     this.body.appendChild(h1);
   },
 // create <form> tag
   addForm: function () {
-    form = document.createElement('form');
+    var form = document.createElement('form');
     form.setAttribute('method', 'post');
     form.classList.add('form');
     this.body.appendChild(form);
   },
 
  addInputSubmit: function (buttonName) {
-    inputSub = document.createElement('input');
+    var inputSub = document.createElement('input');
     inputSub.setAttribute('type', 'submit');
     inputSub.setAttribute('value', buttonName || 'Проверить мои результаты' );
-    form = document.querySelector('.form');
+    var form = document.querySelector('.form');
     form.appendChild(inputSub);
  },
 
@@ -37,18 +37,18 @@ var progrmmingTest = {
    form.appendChild(ol);
 
    for (i=0; i<3; i++){
-   li = document.createElement('li');
+   var li = document.createElement('li');
    li.innerHTML = questions[i].qustion;
    ol.appendChild(li);
-   ul = document.createElement('ul');
+   var ul = document.createElement('ul');
    li.appendChild(ul);
    for (j=0; j<3; j++){
-   answer = document.createElement('li');
+   var answer = document.createElement('li');
    ul.appendChild(answer);
    checkbox = document.createElement('input');
    checkbox.setAttribute('type', 'checkbox');
-    span = document.createElement('span');
-    label = document.createElement('label');
+    var span = document.createElement('span');
+    var label = document.createElement('label');
     span.innerHTML = questions[i].answers[j];
     label.appendChild(checkbox);
     label.appendChild(span);
@@ -67,7 +67,7 @@ progrmmingTest.addQuestions([
    answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},
   {qustion: 'Вопрос №2',
  answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},{
-   qustion: 'Вопрос №2',
+   qustion: 'Вопрос №3',
   answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']
  }]);
  progrmmingTest.addInputSubmit();
