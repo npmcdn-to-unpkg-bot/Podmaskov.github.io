@@ -7,3 +7,5 @@ var hits = 0;
 var guesses = 0;
 
 var isSunk = false;
+
+console.log(window.alert;
