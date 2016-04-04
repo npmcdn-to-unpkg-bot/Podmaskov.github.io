@@ -4,32 +4,48 @@ var sec = 0;
 var min = 0;
 var hour = 0;
 var clean = false;
-
+var timerId;
 
 // Logika for botton start/pause
-buttonStart = document.querySelector('.start');
+var buttonStart = document.querySelector('.start');
 buttonStart.addEventListener('click', function () {
-    if (timerId !== typeof number) {
     var timerId = setInterval(function tick(){trackTime()}, 1);
-  }else if (timerId == typeof number) {
-    clearInterval(timerId);
-  }
 } );
 
-domMsec = document.querySelector('.msecands');
+var buttonStop = document.querySelector('.stop');
+buttonStop.addEventListener('click', function () {
+  clearInterval(timerId);
+
+} );
+
+var domMsec = document.querySelector('.msecands');
+var domSec = document.querySelector('.secunds');
+var domMin = document.querySelector('.minuts');
+var domHours = document.querySelector('.hours');
 
      function trackTime() {
            mSec++
            domMsec.innerHTML = mSec;
-           console.log(mSec)
        if (mSec == 999){
          mSec = 0
          sec++
-      }else if (sec == 60) {
+         domSec.innerHTML = sec;
+      }if (sec == 60) {
         sec = 0
         min++
-     }else if (min == 60) {
+        domMin.innerHTML = min;
+     }if (min == 60) {
         min = 0
         hour++
+        domHours.innerHTML = hour;
+     }
+     if (domSec.innerHTML<10) {
+       domSec.innerHTML = '0'+ sec;
+     }
+     if (domMin.innerHTML<10) {
+         domMin.innerHTML = '0'+ min;
+     }
+     if (domHours.innerHTML<10) {
+         domHours.innerHTMLL = '0'+ hour;
      }
    };
