@@ -14,9 +14,19 @@ buttonStart.addEventListener('click', function () {
 
 var buttonStop = document.querySelector('.stop');
 buttonStop.addEventListener('click', function () {
+    console.log('click button Stop');
   clearInterval(timerId);
 
 } );
+
+var buttonClean = document.querySelector('.clean');
+buttonClean.addEventListener('click', function() {
+  console.log('click button Clean');
+  var mSec = 0;
+  var sec = 0;
+  var min = 0;
+  var hour = 0;
+})
 
 var domMsec = document.querySelector('.msecands');
 var domSec = document.querySelector('.secunds');
