@@ -1,3 +1,4 @@
+
 // var location1 = 3;
 // var location2 = 4;
 // var location3 = 5;
@@ -16,3 +17,15 @@ while (a != 999) {
 }
 setTimeout(mSec, 1);
 mSec();
+
+var location1 = 3;
+var location2 = 4;
+var location3 = 5;
+
+var guess;
+var hits = 0;
+var guesses = 0;
+
+var isSunk = false;
+
+console.log(window.alert;
