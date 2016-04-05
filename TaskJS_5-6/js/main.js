@@ -3,29 +3,33 @@ var mSec = 0;
 var sec = 0;
 var min = 0;
 var hour = 0;
-var clean = false;
+var clean = false
 var timerId;
-
 // Logika for botton start/pause
 var buttonStart = document.querySelector('.start');
 buttonStart.addEventListener('click', function () {
-    var timerId = setInterval(function tick(){trackTime()}, 1);
-} );
+     timerId = setInterval(trackTime, 1);
+});
 
 var buttonStop = document.querySelector('.stop');
 buttonStop.addEventListener('click', function () {
     console.log('click button Stop');
-  clearInterval(timerId);
+    clearInterval(timerId);
 
-} );
+});
 
 var buttonClean = document.querySelector('.clean');
 buttonClean.addEventListener('click', function() {
   console.log('click button Clean');
-  var mSec = 0;
-  var sec = 0;
-  var min = 0;
-  var hour = 0;
+   mSec = 0;
+   sec = 0;
+   min = 0;
+   hour = 0;
+   domMsec.innerHTML = '00' + mSec;
+   domSec.innerHTML = '0'+ sec;
+   domMin.innerHTML = '0' + min;
+   domHours.innerHTML= '0'+ hour;
+
 })
 
 var domMsec = document.querySelector('.msecands');
