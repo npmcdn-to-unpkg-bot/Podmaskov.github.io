@@ -11,13 +11,17 @@ var userNames = [];
 // add elements to array
 for (var i=0; i<5; i++){
   userNames.push(prompt('Enter '+ (i+1) + ' name'));
+  console.log(userNames);
 }
 //add user name and look for it in array
 var loginName = prompt('Enter your name');
 function userExsits (login){
   for(var i=0; i<userNames.length; i++){
-    if((userNames[i]===login) && (userNames[i] !== null)){
+    if((userNames[i]===login) && (userNames[i] !== null) && (userNames[i] !== '') ){
     return true;
+    }
+    if ((login == null) && (login == '')) {
+       return false;
     }
   }
    return false;
