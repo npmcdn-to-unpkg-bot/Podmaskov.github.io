@@ -9,13 +9,16 @@ var timerId;
 var buttonStart = document.querySelector('.start');
 buttonStart.addEventListener('click', function () {
      timerId = setInterval(trackTime, 1);
+     buttonStart.classList.add('display-none');
+     buttonStop.classList.remove('display-none');
 });
 
 var buttonStop = document.querySelector('.stop');
 buttonStop.addEventListener('click', function () {
     console.log('click button Stop');
     clearInterval(timerId);
-
+    buttonStop.classList.add('display-none');
+    buttonStart.classList.remove('display-none');
 });
 
 var buttonClean = document.querySelector('.clean');
