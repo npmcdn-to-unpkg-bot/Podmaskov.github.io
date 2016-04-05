@@ -16,12 +16,13 @@ for (var i=0; i<5; i++){
 var loginName = prompt('Enter your name');
 function userExsits (login){
   for(var i=0; i<userNames.length; i++){
-    if(userNames[i]===login){
+    if((userNames[i]===login) && (userNames[i] !== null)){
     return true;
     }
   }
    return false;
 }
+
 // show message
 if (userExsits(loginName)) {
   alert(loginName + ' ,вы успешно вошли');
