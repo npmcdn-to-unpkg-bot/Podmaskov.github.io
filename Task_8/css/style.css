@@ -9,7 +9,10 @@
     font-style: normal;
 }
 .main-wrap {
+  margin-right: auto;
   overflow: hidden;
+  margin-left: auto;
+  max-width: 2400px;
 }
 
 header {
