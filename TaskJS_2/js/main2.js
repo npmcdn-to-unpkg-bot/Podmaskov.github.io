@@ -5,7 +5,14 @@
 // Bootstrap и создавать DOM-элементы с готовыми бутстраповскими классами.
 // Изначально на странице должен быть только <body>, вызывая методы объекта нужно
 // создать dom-элементыvar
-
+var QuestionsAndAnswers = ([
+  {qustion: 'Вопрос №1',
+   answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},
+  {qustion: 'Вопрос №2',
+ answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},{
+   qustion: 'Вопрос №3',
+  answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']
+ }])
 var progrmmingTest = {
   body: document.body,
 // create <h1> tag
@@ -32,42 +39,37 @@ var progrmmingTest = {
  },
 
  addQuestions: function (questions) {
-   var ol= document.createElement("ol");
+   var BlockForQuestions= document.createElement("ol");
    var form = document.querySelector('.form');
-   form.appendChild(ol);
+   form.appendChild(BlockForQuestions);
 
    for (i=0; i<3; i++){
-   var li = document.createElement('li');
-   li.innerHTML = questions[i].qustion;
-   ol.appendChild(li);
-   var ul = document.createElement('ul');
-   li.appendChild(ul);
+   var nameQuestions = document.createElement('li');
+   nameQuestions.innerHTML = QuestionsAndAnswers[i].qustion;
+   BlockForQuestions.appendChild(nameQuestions);
+
+   var BlockForAnswer = document.createElement('ul');
+   nameQuestions.appendChild(BlockForAnswer);
+
    for (j=0; j<3; j++){
-   var answer = document.createElement('li');
-   ul.appendChild(answer);
-   checkbox = document.createElement('input');
+   var nameAnswer = document.createElement('li');
+   BlockForAnswer.appendChild(nameAnswer);
+
+   var checkbox = document.createElement('input');
    checkbox.setAttribute('type', 'checkbox');
+
     var span = document.createElement('span');
     var label = document.createElement('label');
-    span.innerHTML = questions[i].answers[j];
+
+    span.innerHTML = QuestionsAndAnswers[i].answers[j];
     label.appendChild(checkbox);
     label.appendChild(span);
-    answer.appendChild(label);
-
+    nameAnswer.appendChild(label);
    }
   }
-
  }
-
 }
 progrmmingTest.addH1();
 progrmmingTest.addForm();
-progrmmingTest.addQuestions([
-  {qustion: 'Вопрос №1',
-   answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},
-  {qustion: 'Вопрос №2',
- answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},{
-   qustion: 'Вопрос №3',
-  answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']
- }]);
+progrmmingTest.addQuestions(QuestionsAndAnswers);
  progrmmingTest.addInputSubmit();
