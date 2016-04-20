@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*---------------------------jCarousel-----------------------------*/
 /*
 This is the visible area of you carousel.
@@ -7,9 +10,13 @@ The width can be either fixed in px or flexible in %.
 Position must be relative!
 */
 .jcarousel {
+    width: 800px;
+    height: 500px;
     position: relative;
     overflow: hidden;
+
 }
+
 
 /*
 This is the container of the carousel items.
@@ -17,7 +24,7 @@ You must ensure that the position is relative or absolute and
 that the width is big enough to contain all items.
 */
 .jcarousel ul {
-    width: 20000em;
+    width: 5000px;
     position: relative;
 
     /* Optional, required in this case since it's a <ul> element */
@@ -30,8 +37,26 @@ that the width is big enough to contain all items.
 These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
 */
-.jcarousel li {
+.image_1{
+  background-image: url(../img/CSS.jpg);
+  background-repeat: no-repeat;
+}
+.image_2{
+  background-image: url(../img/goit.jpg);
+  background-repeat: no-repeat;
+}
+.image_3{
+  background-image: url(../img/ith.png);
+  background-repeat: no-repeat;
+}
+.image_4{
+  background-image: url(../img/javascript.png);
+  background-repeat: no-repeat;
+}
+.jcarousel li{
     /* Required only for block elements like <li>'s */
+    width: 800px;
+    height: 350px;
     float: left;
 }
 /*---------------------------jCarousel END-----------------------------*/
