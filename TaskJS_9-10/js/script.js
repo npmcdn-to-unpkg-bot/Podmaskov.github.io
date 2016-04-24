@@ -1,3 +1,4 @@
+// Carusel
 $(function(){
   $('.jcarousel').jcarousel();
   $('.jcarousel').jcarousel({
@@ -11,3 +12,20 @@ $(function(){
         target: '+=1'
     });
 });
+// Carusel END
+// Select
+$(function(){
+  $('.select').styler()
+});
+
+
+// checkbox
+$(function(){
+$('.jqr').on('click', function () {
+   if ($(this).find('input:checked').length) {
+     $(this).addClass('active');
+   } else {
+     $(this).removeClass('active');
+   }
+ });
+ });
