@@ -29,3 +29,15 @@ $('.jqr').on('click', function () {
    }
  });
  });
+ // Menu
+ $(function(){
+  var $dropList = $('.drop-list');
+  $dropList.hover(function(){
+    console.log('It\'s ok')
+    $(this).children('.submenu').slideToggle(800).animate({
+      backgroundColor: '#0000ff'
+    }, 400);
+    $(this).children('.submenu').css({'backgroundColor': '#000077'});
+
+  });
+ });

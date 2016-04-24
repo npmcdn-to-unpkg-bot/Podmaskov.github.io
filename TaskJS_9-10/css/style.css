@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  height: 900px;
+}
 /*---------------------------jCarousel-----------------------------*/
 /*
 This is the visible area of you carousel.
@@ -106,16 +109,18 @@ have a fixed width and height (but it's not required).
 в них все нижеследующие стили не сработают. */
 
 /* Прячем оригинальный чекбокс. */
-.checkbox:not(checked) {
+.checkbox {
   position: absolute;
   opacity: 0;
 }
-.checkbox:not(checked) + label {
+.checkbox + label {
+  margin-left: 150px;
+  line-height: 35px;
   position: relative; /* будем позиционировать псевдочекбокс относительно label */
   padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
 }
 /* Оформление первой части чекбокса в выключенном состоянии (фон). */
-.checkbox:not(checked) + label:before {
+.checkbox + label:before {
   content: '';
   position: absolute;
   top: -4px;
@@ -127,7 +132,7 @@ have a fixed width and height (but it's not required).
   box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
 }
 /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
-.checkbox:not(checked) + label:after {
+.checkbox + label:after {
   content: '';
   position: absolute;
   top: -2px;
@@ -150,4 +155,61 @@ have a fixed width and height (but it's not required).
 /* Показываем получение фокуса. */
 .checkbox:focus + label:before {
   box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+/*Menu*/
+nav{
+  height: 50px;
+  background-color: lightgray;
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav ul{
+  list-style: none;
+
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+nav li ul {
+  background: #0000ff;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 200px;
+}
+nav li li {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+nav li li ul {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  margin: 0;
+}
+nav a {
+  line-height: 40px;
+  padding: 0 12px;
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: #999;
+}
+nav li li a {
+  border-bottom: 1px solid #fff;
+  margin: 0 10px;
+  padding: 0;
+}
+nav li li:last-child a {
+  border-bottom: none;
+}
+ul.submenu {
+  display:none;
 }

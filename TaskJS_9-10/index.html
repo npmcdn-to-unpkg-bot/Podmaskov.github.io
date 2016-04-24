@@ -23,8 +23,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
   <script src="js/jquery.formstyler.js"></script>
   <script src="js/script.js"></script>
+  <!-- Menu -->
+  <nav>
+  <ul class="menu">
+    <li><a href="#">Nav 1</a></li>
+    <li><a href="#">Nav 2</a></li>
+    <li class="drop-list"><a href="#">Nav 3</a>
+        <ul class="submenu">
+          <li><a href="#">Nav 1</a></li>
+          <li><a href="#">Nav 2</a></li>
+          <li class="drop-list"><a href="#">Nav 3</a>
+            <ul class="submenu">
+              <li><a href="">Nav 1</a></li>
+              <li><a href="">Nav 2</a></li>
+              <li><a href="">Nav 3</a></li>
+              <li><a href="">Nav 4</a></li>
+              <li><a href="">Nav 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Nav 4</a></li>
+          <li><a href="#">Nav 5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Nav 4</a></li>
+    <li><a href="#">Nav 5</a></li>
+  </ul>
+</nav>
   <!--Select  -->
   <select class="select" >
     <option value="">Элемент 1</option>
@@ -38,7 +65,7 @@
 
 <label class="jqr"><input type="checkbox">Чекбокс на JQUERY</label>
 <br>
-<input type="checkbox" class="checkbox" id="checkbox" />
-<label for="checkbox">Я переключаю чекбокс</label>
+<input type="checkbox" class="checkbox" id="checkbox"/>
+<label for="checkbox">Чекбокс на CSS</label>
 </body>
 </html>
