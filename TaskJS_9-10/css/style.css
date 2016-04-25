@@ -159,7 +159,7 @@ have a fixed width and height (but it's not required).
 /*Menu*/
 nav{
   height: 50px;
-  background-color: lightgray;
+  background-color: #ff6464;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -172,7 +172,7 @@ nav ul li {
   position: relative;
 }
 nav li ul {
-  background: #0000ff;
+  background: #3B0203;
   position: absolute;
   left: 0;
   top: 40px;

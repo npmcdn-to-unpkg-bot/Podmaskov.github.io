@@ -35,9 +35,9 @@ $('.jqr').on('click', function () {
   $dropList.hover(function(){
     console.log('It\'s ok')
     $(this).children('.submenu').slideToggle(800).animate({
-      backgroundColor: '#0000ff'
+      backgroundColor: '#F52E31'
     }, 400);
-    $(this).children('.submenu').css({'backgroundColor': '#000077'});
+    $(this).children('.submenu').css({'backgroundColor': '#3B0203'});
 
   });
  });
