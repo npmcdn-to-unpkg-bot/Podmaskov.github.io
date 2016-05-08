@@ -2,81 +2,49 @@ $(function () {
 'use strict'
 var QuestionsAndAnswers = { data: [
   {qustion: 'Вопрос №1',
-   answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},
+   answers: [{  text:'вариант ответа №1',
+                trueOrFolse: 'correct' },
+              { text:'вариант ответа №2',
+                trueOrFolse: 'uncorrect'},
+              { text:'вариант ответа №2',
+                trueOrFolse: 'uncorrect'},]},
   {qustion: 'Вопрос №2',
- answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']},{
-   qustion: 'Вопрос №3',
-  answers: ['вариант ответа №1','вариант ответа №2','вариант ответа №3']
-}]
-}
-var test = {
-  dog: 'test',
-}
+ answers: [{  text:'вариант ответа №1',
+              trueOrFolse: 'correct' },
+            { text:'вариант ответа №2',
+              trueOrFolse: 'uncorrect'},
+            { text:'вариант ответа №2',
+              trueOrFolse: 'uncorrect'},]},
+  {qustion: 'Вопрос №3',
+  answers: [{  text:'вариант ответа №1',
+               trueOrFolse: 'correct' },
+             { text:'вариант ответа №2',
+               trueOrFolse: 'uncorrect'},
+             { text:'вариант ответа №2',
+               trueOrFolse: 'uncorrect'},]
+}]};
+
+
  localStorage.setItem("cash",JSON.stringify(QuestionsAndAnswers));
 var objWithQuestionsAndAnswers = JSON.parse(localStorage.getItem('cash'));
 
 var $shablon = $('#test').html();
-var content = tmpl( $shablon, test);
-// $('body').append(content);
-});
+var content = tmpl( $shablon,QuestionsAndAnswers);
+$('body').append(content);
 
-// var progrmmingTest = {
-//   body: document.body,
-// // create <h1> tag
-//   addH1: function (nameTest) {
-//     var h1 = document.createElement('h1');
-//     h1.classList.add('title');
-//     h1.innerHTML = nameTest || 'Тест по программированию';
-//     this.body.appendChild(h1);
-//   },
-// // create <form> tag
-//   addForm: function () {
-//     var form = document.createElement('form');
-//     form.setAttribute('method', 'post');
-//     form.classList.add('form');
-//     this.body.appendChild(form);
-//   },
-//
-//  addInputSubmit: function (buttonName) {
-//     var inputSub = document.createElement('input');
-//     inputSub.setAttribute('type', 'submit');
-//     inputSub.setAttribute('value', buttonName || 'Проверить мои результаты' );
-//     var form = document.querySelector('.form');
-//     form.appendChild(inputSub);
-//  },
-//
-//  addQuestions: function (questions) {
-//    var BlockForQuestions= document.createElement("ol");
-//    var form = document.querySelector('.form');
-//    form.appendChild(BlockForQuestions);
-//
-//    for (var i=0; i<3; i++){
-//    var nameQuestions = document.createElement('li');
-//    nameQuestions.innerHTML = QuestionsAndAnswers[i].qustion;
-//    BlockForQuestions.appendChild(nameQuestions);
-//
-//    var BlockForAnswer = document.createElement('ul');
-//    nameQuestions.appendChild(BlockForAnswer);
-//
-//    for (var j=0; j<3; j++){
-//    var nameAnswer = document.createElement('li');
-//    BlockForAnswer.appendChild(nameAnswer);
-//
-//    var checkbox = document.createElement('input');
-//    checkbox.setAttribute('type', 'checkbox');
-//
-//     var span = document.createElement('span');
-//     var label = document.createElement('label');
-//
-//     span.innerHTML = QuestionsAndAnswers[i].answers[j];
-//     label.appendChild(checkbox);
-//     label.appendChild(span);
-//     nameAnswer.appendChild(label);
-//    }
-//   }
-//  }
-// }
-// progrmmingTest.addH1();
-// progrmmingTest.addForm();
-// progrmmingTest.addQuestions(QuestionsAndAnswers);
-//  progrmmingTest.addInputSubmit();
+// checkin
+$('button').on('click', function(){
+  $('body').append('<div class="modal"></div>')
+  var reset = $('.modal').append('<button class=reset> Пройти еще раз </button>')
+   if( $('.correct:checked ').length=== 3 && $('.uncorrect:checked').length===0){
+     $('.modal').append('<h1 class="message">Тест сдан!!!</h1>')
+   }else{
+     $('.modal').append('<h1 class="message">Тест не сдан!!!</h1>')
+   }
+
+reset.on('click', function(){
+ $('.modal').remove();
+ $('input').removeAttr('checked');
+});
+  });
+    });

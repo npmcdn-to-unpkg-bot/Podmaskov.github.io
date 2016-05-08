@@ -1,0 +1,25 @@
+
+body{
+  position: relative;
+  overflow: hidden;
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+  border: 1px solid black;
+}
+.message{
+  width: 250px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reset {
+  position: absolute;
+  bottom: 30px;
+  right: 300px;
+}
