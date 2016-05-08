@@ -1,26 +1,26 @@
 $(function () {
 'use strict'
 var QuestionsAndAnswers = { data: [
-  {qustion: 'Вопрос №1',
-   answers: [{  text:'вариант ответа №1',
+  {qustion: 'Столица Украины',
+   answers: [{  text:'Киев',
                 trueOrFolse: 'correct' },
-              { text:'вариант ответа №2',
+              { text:'Харьков',
                 trueOrFolse: 'uncorrect'},
-              { text:'вариант ответа №2',
+              { text:'Львов',
                 trueOrFolse: 'uncorrect'},]},
-  {qustion: 'Вопрос №2',
- answers: [{  text:'вариант ответа №1',
+  {qustion: 'Столица Белоруссии',
+ answers: [{  text:'Минск',
               trueOrFolse: 'correct' },
-            { text:'вариант ответа №2',
+            { text:'Брест',
               trueOrFolse: 'uncorrect'},
-            { text:'вариант ответа №2',
+            { text:'Гомель',
               trueOrFolse: 'uncorrect'},]},
-  {qustion: 'Вопрос №3',
-  answers: [{  text:'вариант ответа №1',
+  {qustion: 'Столица Польши',
+  answers: [{  text:'Варшава',
                trueOrFolse: 'correct' },
-             { text:'вариант ответа №2',
+             { text:'Краков',
                trueOrFolse: 'uncorrect'},
-             { text:'вариант ответа №2',
+             { text:'Люблин',
                trueOrFolse: 'uncorrect'},]
 }]};
 
@@ -34,6 +34,7 @@ $('body').append(content);
 
 // checkin
 $('button').on('click', function(){
+  $('button').css('display','none');
   $('body').append('<div class="modal"></div>')
   var reset = $('.modal').append('<button class=reset> Пройти еще раз </button>')
    if( $('.correct:checked ').length=== 3 && $('.uncorrect:checked').length===0){
@@ -43,6 +44,7 @@ $('button').on('click', function(){
    }
 
 reset.on('click', function(){
+  $('button').css('display','block');
  $('.modal').remove();
  $('input').removeAttr('checked');
 });

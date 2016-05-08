@@ -3,6 +3,9 @@ body{
   position: relative;
   overflow: hidden;
 }
+ul li{
+  list-style: none;
+}
 .modal{
   position: absolute;
   top: 50%;
@@ -11,6 +14,10 @@ body{
   width: 50%;
   margin: -15% 0 0 -25%;
   border: 1px solid black;
+  -webkit-box-shadow: 2px 0px 17px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 17px 3px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 17px 3px rgba(0,0,0,0.75);
+  background-color: lightgray;
 }
 .message{
   width: 250px;
@@ -22,4 +29,5 @@ body{
   position: absolute;
   bottom: 30px;
   right: 300px;
+  background-color: yellow;
 }
