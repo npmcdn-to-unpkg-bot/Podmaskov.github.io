@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskJS_15-16</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <a href="https://pixabay.com/">
+      <img src="https://pixabay.com/static/img/public/leaderboard_a.png" alt="Pixabay">
+    </a>
+
+  </div>
+   <div class="wrapButton">
+     <input class="data" type="text" name="name" placeholder="Search images">
+     <button class="search">Search</button>
+   </div>
+   <script id="template" type="text/template">
+     <div class="wrapimages">
+       <% for (i=0; i<hits.length; i++) {%>
+         <img src="<%= hits[i].previewURL%>">
+         <%}%>
+     </div>
+   </script>
+</body>
+</html>
