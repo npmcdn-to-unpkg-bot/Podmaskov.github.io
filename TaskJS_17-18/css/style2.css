@@ -1,0 +1,11 @@
+.wrap2 {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: black;
+}
+.wrap2 p {
+  color: white;
+}

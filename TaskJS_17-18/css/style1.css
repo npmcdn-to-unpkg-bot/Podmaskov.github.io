@@ -1,0 +1,11 @@
+.wrap1 {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: green;
+}
+.wrap1 p {
+  color: yellow;
+}
