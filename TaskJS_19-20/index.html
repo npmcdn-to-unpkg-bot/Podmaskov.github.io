@@ -3,9 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <title>TaskJS_19-20</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="js/jquery.jcarousel.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
-<h1>Hello World</h1>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <a href="#" class="logo__link">
+      <img src="img/logo.png" alt="logo" class="logo__pictur">
+      </a>
+      <p class="logo__name"><span class="logo__bigtext">Build Home</span>
+        <span class="logo__smalltext">INDUSTRIAL THEME</span>
+      </p>
+    </div>
+    <div class="social">
+      <i class="icon-facebook"></i>
+      <i class="icon-twitter"></i>
+      <i class="icon-rss"></i>
+      <i class="icon-linkedin"></i>
+      <i class="icon-skype"></i>
+    </div>
+  </header>
+    <nav>
+      <ul class="menu">
+        <li>HOME</li>
+        <li>FEATURES</li>
+        <li>SERVICES</li>
+        <li>NEWS</li>
+        <li>SHOP</li>
+      </ul>
+      <div class="search">
+        <input type="text">
+        <i class="icon-search"></i>
+      </div>
+    </nav>
+    <div class="wrapcarousel">
+      <div class="jcarousel">
+        <ul>
+            <li><img src="img/slide1.jpg" alt="slider" /></li>
+            <li><img src="img/slide2.jpg" alt="slider" /></li>
+            <li><img src="img/slide3.png" alt="slider" /></li>
+        </ul>
+      </div>
+      <!-- Pagination -->
+      <div class="jcarousel-pagination">
+          <a href="#1">1</a>
+          <a href="#2">2</a>
+          <a href="#3">3</a>
+      </div>
+    </div>
+  <section class="aboutCompany">
+
+      <article class="aboutCompany__power" >
+        <div class="aboutCompany__number1">
+          <span>01</span>
+        </div>
+        <div class="aboutCompany__logo1"></div>
+        <h1 class="aboutCompany__powertitle">Power Inside</h1>
+        <p class="aboutCompany__powerarticle">
+          Cum sociis natoque penatibus et magnis dis parturient montesmus.
+          Pro vel nibh et elit mollis commodo et nec augueique
+        </p>
+        <a href="#" class="aboutCompany__powerlink">Read More</a>
+      </article>
+
+      <article class="aboutCompany__technologies">
+        <div class="aboutCompany__number2">
+          <span>02</span>
+        </div>
+        <div class="aboutCompany__logo2"></div>
+        <h1 class="aboutCompany__technologiestitle">New Technologies</h1>
+        <p class="aboutCompany__technologiesaticle">
+          Cum sociis natoque penatibus et magnis dis parturient montesmus.
+          Pro vel nibh et elit mollis commodo et nec augueique
+        </p>
+        <a href="#" class="aboutCompany__technologieslink">Read More</a>
+      </article>
+
+      <article class="aboutCompany__support">
+        <div class="aboutCompany__number3">
+          <span>03</span>
+        </div>
+        <div class="aboutCompany__logo3"></div>
+        <h1 class="aboutCompany__supporttitle">Fast Support</h1>
+        <p class="aboutCompany__supportaticle">
+          Cum sociis natoque penatibus et magnis dis parturient montesmus.
+          Pro vel nibh et elit mollis commodo et nec augueique
+        </p>
+        <a href="#" class="aboutCompany__supportlink">Read More</a>
+      </article>
+  </section>
+
+    <section class="OurServices">
+        <h1 class="OurServices__title">Our Services</h1>
+        <div class="OurServices__Box1">
+          <div class="Box1Pictur"></div>
+          <a href="#" class="Box1Link">Schedule Services</a>
+        </div>
+        <div class="OurServices__Box2">
+          <div class="Box2Pictur"></div>
+          <a href="#" class="Box2Link">Preventive Maintence</a>
+        </div>
+        <div class="OurServices__Box3">
+          <div class="Box3Pictur"></div>
+          <a href="#" class="Box3Link">Tire and Wheel Services</a>
+        </div>
+        <div class="OurServices__Box3">
+          <div class="Box3Pictur"></div>
+          <a href="#" class="Box3Link">Repair Services</a>
+        </div>
+    </section>
+</div>
 </body>
 </html>

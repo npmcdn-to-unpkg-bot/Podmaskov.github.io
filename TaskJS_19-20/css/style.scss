@@ -1,10 +1,55 @@
-* {
-  margin: 0;
-  padding: 0;
+
+@import 'iconFont.scss';
+@import 'carousel.scss';
+// font-family: 'Ubuntu', sans-serif;
+// font-family: 'Ubuntu Condensed', sans-serif;
+body {
+  font-family: 'Ubuntu', sans-serif;
 }
-h1 {
-  color: yellow;
+.wrap {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
-body{
-  background: gray;
+// Logo
+.logo {
+  width: 220px;
+  height: 36px;
+  margin: 36px 0 0 4px;
+  float: left;
+  .logo__link {
+    display: block;
+    float: left;
+  }
+  .logo__name {
+    width: 220px;
+    .logo__bigtext{
+      font-size: 30px;
+      color: #434343;
+    }
+    .logo__smalltext {
+      font-size: 12px;
+      color: #8f8f8f;
+      letter-spacing: 3.4px;
+    }
+  }
+}
+// social
+.social{
+  float: right;
+  color: #cccccc;
+  i:hover{
+    color: #248cec;
+    cursor: pointer;
+  }
+}
+// Navigation
+nav {
+  width: 1160px;
+  height: 56px;
+  background-color: #2a2d32;
+  clear: both;
+  .menu li {
+    display: inline-block;
+  }
 }
