@@ -101,6 +101,13 @@
 body {
   font-family: 'Ubuntu', sans-serif; }
 
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
 .wrap {
   width: 1160px;
   margin-left: auto;
@@ -125,18 +132,31 @@ body {
       letter-spacing: 3.4px; }
 
 .social {
+  margin-top: 36px;
   float: right;
   color: #cccccc; }
   .social i:hover {
     color: #248cec;
     cursor: pointer; }
 
-nav {
+.wrapmenu {
   width: 1160px;
   height: 56px;
   background-color: #2a2d32;
-  clear: both; }
-  nav .menu li {
-    display: inline-block; }
+  margin-top: 38px; }
+  .wrapmenu .menu {
+    height: 56px; }
+  .wrapmenu .menu__item {
+    display: inline-block;
+    width: 115px;
+    height: 56px;
+    padding-top: 20px;
+    border-right: 2px solid #181a1d;
+    text-align: center; }
+  .wrapmenu .menu__link {
+    text-decoration: none;
+    color: #fff; }
+  .wrapmenu .menu__link:hover {
+    color: #f4b60d; }
 
 /*# sourceMappingURL=style.css.map */
