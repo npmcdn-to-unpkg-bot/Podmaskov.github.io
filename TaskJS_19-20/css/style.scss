@@ -328,6 +328,7 @@ visibility: hidden;
     .Box1Pictur {
       background-image: url(../img/photo1.jpg);
     }
+
     .Box2Pictur {
       background-image: url(../img/photo2.jpg);
     }
@@ -337,16 +338,16 @@ visibility: hidden;
     .Box4Pictur {
       background-image: url(../img/photo4.jpg);
     }
-    .Box1Link,
-    .Box2Link,
-    .Box3Link,
-    .Box4Link {
+    .BoxLink {
       display: block;
       margin-top: 35px;
       text-decoration: none;
       text-align: center;
       font-size: 16px;
       color: #fff;
+    }
+    .BoxLink:hover {
+      color: $coloryellow; 
     }
   }
 }

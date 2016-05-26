@@ -364,15 +364,14 @@ body {
       background-image: url(../img/photo3.jpg); }
     .wrapOurServices .OurServices .Box4Pictur {
       background-image: url(../img/photo4.jpg); }
-    .wrapOurServices .OurServices .Box1Link,
-    .wrapOurServices .OurServices .Box2Link,
-    .wrapOurServices .OurServices .Box3Link,
-    .wrapOurServices .OurServices .Box4Link {
+    .wrapOurServices .OurServices .BoxLink {
       display: block;
       margin-top: 35px;
       text-decoration: none;
       text-align: center;
       font-size: 16px;
       color: #fff; }
+    .wrapOurServices .OurServices .BoxLink:hover {
+      color: #f4b60d; }
 
 /*# sourceMappingURL=style.css.map */

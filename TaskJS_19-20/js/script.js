@@ -20,13 +20,22 @@ $('.jcarousel-pagination')
 // hover
 $(function (){
 
-$('.Box1Pictur__hover').hover( handlerIn, handlerout );
+$('.Box1Pictur, .Box2Pictur, .Box3Pictur, .Box4Pictur').hover( handlerIn, handlerout );
 
  function handlerIn() {
-  $(this).css('opacity','1')
-  $('this', 'a').css('color', '#f4b60d')
+  $(this).find('.Box1Pictur__hover').css({
+                opacity: '1',
+                cursor: 'pointer'
+              });
+  var $parent = $(this).parent()
+  $parent.find('.BoxLink').css('color','#f4b60d')
  }
- function handlerout (e) {
-   $(this).css('opacity','0')
+ function handlerout () {
+   $(this).find('.Box1Pictur__hover').css({
+                 opacity: '0',
+                 cursor: 'pointer'
+               });
+   var $parent = $(this).parent()
+   $parent.find('.BoxLink').css('color','#fff')
  }
 })
