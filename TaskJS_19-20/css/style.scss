@@ -272,6 +272,81 @@ visibility: hidden;
     font-weight: 500;
     font-size: 90px;
   }
+}
+// OuerService
+  .wrapOurServices {
+  width: 100%;
+  height: 500px;
+  background-color: #2a2d32;
 
+  .OurServices {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 
+    .OurServices__title {
+      padding-top: 48px;
+      font-size: 24px;
+      color: #fff;
+    }
+    .OurServices__Box1,
+    .OurServices__Box2,
+    .OurServices__Box3,
+    .OurServices__Box4 {
+      margin-top: 55px;
+      width: 260px;
+      height: 310px;
+      float: left;
+    }
+    .OurServices__Box1,
+    .OurServices__Box2,
+    .OurServices__Box3, {
+      margin-right: 40px;
+    }
+    .Box1Pictur,
+    .Box2Pictur,
+    .Box3Pictur,
+    .Box4Pictur {
+      width: 260px;
+      height: 260px;
+      background-position: center;
+
+      .Box1Pictur__hover {
+        opacity: 0;
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+        text-align: center;
+        background-color: rgba(40, 140, 232, 0.7);
+
+        .Box1Pictur__hoverimg {
+          vertical-align: middle;
+        }
+      }
+    }
+    .Box1Pictur {
+      background-image: url(../img/photo1.jpg);
+    }
+    .Box2Pictur {
+      background-image: url(../img/photo2.jpg);
+    }
+    .Box3Pictur {
+      background-image: url(../img/photo3.jpg);
+    }
+    .Box4Pictur {
+      background-image: url(../img/photo4.jpg);
+    }
+    .Box1Link,
+    .Box2Link,
+    .Box3Link,
+    .Box4Link {
+      display: block;
+      margin-top: 35px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
 }

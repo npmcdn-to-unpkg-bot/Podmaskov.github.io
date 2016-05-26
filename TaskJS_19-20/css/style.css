@@ -309,4 +309,70 @@ body {
     font-weight: 500;
     font-size: 90px; }
 
+.wrapOurServices {
+  width: 100%;
+  height: 500px;
+  background-color: #2a2d32; }
+  .wrapOurServices .OurServices {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+    .wrapOurServices .OurServices .OurServices__title {
+      padding-top: 48px;
+      font-size: 24px;
+      color: #fff; }
+    .wrapOurServices .OurServices .OurServices__Box1,
+    .wrapOurServices .OurServices .OurServices__Box2,
+    .wrapOurServices .OurServices .OurServices__Box3,
+    .wrapOurServices .OurServices .OurServices__Box4 {
+      margin-top: 55px;
+      width: 260px;
+      height: 310px;
+      float: left; }
+    .wrapOurServices .OurServices .OurServices__Box1,
+    .wrapOurServices .OurServices .OurServices__Box2,
+    .wrapOurServices .OurServices .OurServices__Box3 {
+      margin-right: 40px; }
+    .wrapOurServices .OurServices .Box1Pictur,
+    .wrapOurServices .OurServices .Box2Pictur,
+    .wrapOurServices .OurServices .Box3Pictur,
+    .wrapOurServices .OurServices .Box4Pictur {
+      width: 260px;
+      height: 260px;
+      background-position: center; }
+      .wrapOurServices .OurServices .Box1Pictur .Box1Pictur__hover,
+      .wrapOurServices .OurServices .Box2Pictur .Box1Pictur__hover,
+      .wrapOurServices .OurServices .Box3Pictur .Box1Pictur__hover,
+      .wrapOurServices .OurServices .Box4Pictur .Box1Pictur__hover {
+        opacity: 0;
+        width: 260px;
+        height: 260px;
+        line-height: 260px;
+        text-align: center;
+        background-color: rgba(40, 140, 232, 0.7); }
+        .wrapOurServices .OurServices .Box1Pictur .Box1Pictur__hover .Box1Pictur__hoverimg,
+        .wrapOurServices .OurServices .Box2Pictur .Box1Pictur__hover .Box1Pictur__hoverimg,
+        .wrapOurServices .OurServices .Box3Pictur .Box1Pictur__hover .Box1Pictur__hoverimg,
+        .wrapOurServices .OurServices .Box4Pictur .Box1Pictur__hover .Box1Pictur__hoverimg {
+          vertical-align: middle; }
+    .wrapOurServices .OurServices .Box1Pictur {
+      background-image: url(../img/photo1.jpg); }
+    .wrapOurServices .OurServices .Box2Pictur {
+      background-image: url(../img/photo2.jpg); }
+    .wrapOurServices .OurServices .Box3Pictur {
+      background-image: url(../img/photo3.jpg); }
+    .wrapOurServices .OurServices .Box4Pictur {
+      background-image: url(../img/photo4.jpg); }
+    .wrapOurServices .OurServices .Box1Link,
+    .wrapOurServices .OurServices .Box2Link,
+    .wrapOurServices .OurServices .Box3Link,
+    .wrapOurServices .OurServices .Box4Link {
+      display: block;
+      margin-top: 35px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
