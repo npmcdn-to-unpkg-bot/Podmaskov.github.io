@@ -39,3 +39,6 @@ $('.Box1Pictur, .Box2Pictur, .Box3Pictur, .Box4Pictur').hover( handlerIn, handle
    $parent.find('.BoxLink').css('color','#fff')
  }
 })
+// accordion
+$(function (){
+})
