@@ -41,4 +41,9 @@ $('.Box1Pictur, .Box2Pictur, .Box3Pictur, .Box4Pictur').hover( handlerIn, handle
 })
 // accordion
 $(function (){
+  $('.bannersPlace__bottom').on('click', function(){
+    $(this).toggleClass('bannersPlace__bottom--activ bannersPlace__bottom');
+    $(this).find('i').toggleClass('icon-plus icon-minus');
+    $(this).parent().find('p.bannersPlace__content').toggleClass('displayNone');
+  })
 })
