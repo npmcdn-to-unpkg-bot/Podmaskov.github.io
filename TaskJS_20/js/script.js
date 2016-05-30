@@ -274,21 +274,22 @@ var data= [
   }
 ]
 // Skills
-// var skills = _.map(data, 'skills');
-// console.log(skills);
-// skills = _.flatten(skills)
-// console.log(skills);
-// skills = _.uniq(skills);
-// console.log(skills);
-// skills= _.sortBy(skills, function(sort){
-// return sort.toLowerCase();
-// });
-// console.log(skills);
+var skills = _.map(data, 'skills');
+skills = _.flatten(skills)
+skills = _.uniq(skills);
+skills= _.sortBy(skills, function(sort){
+return sort.toLowerCase();
+});
+console.log(skills);
 // Names
-var names= _.map(data,'name');
-var dataFriends = _.map(data,'fri');
-    // names = _.sortBy(data.friends, function (sort) {
-    //   return sort.length
-    // });
-    // console.log(names);
-//
+var sortObj = _.sortBy(data,function (obj) {
+  return obj.friends.length
+});
+var names = _.map(sortObj, 'name');
+console.log(names);
+// task 3
+var arrFrends = _.map(data, 'friends')
+arrFrends = _.flatten(arrFrends);
+arrFrends = _.map(arrFrends, 'name')
+arrFrends = _.uniq(arrFrends);
+console.log(arrFrends);
