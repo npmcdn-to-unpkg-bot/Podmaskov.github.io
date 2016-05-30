@@ -127,12 +127,13 @@ visibility: hidden;
 
     .jcarousel-pagination a {
       display: inline-block;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       margin-right: 15px;
       border: 4px solid #fff;
       color: #fff;
       background-color: #fff;
+      font-size: 0px;
     }
     .jcarousel-pagination .active {
       background-color: #001d1d;
