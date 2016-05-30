@@ -273,3 +273,22 @@ var data= [
     "_id": "56bdc3396fdbaec5ee4ca929"
   }
 ]
+// Skills
+// var skills = _.map(data, 'skills');
+// console.log(skills);
+// skills = _.flatten(skills)
+// console.log(skills);
+// skills = _.uniq(skills);
+// console.log(skills);
+// skills= _.sortBy(skills, function(sort){
+// return sort.toLowerCase();
+// });
+// console.log(skills);
+// Names
+var names= _.map(data,'name');
+var dataFriends = _.map(data,'fri');
+    // names = _.sortBy(data.friends, function (sort) {
+    //   return sort.length
+    // });
+    // console.log(names);
+//
