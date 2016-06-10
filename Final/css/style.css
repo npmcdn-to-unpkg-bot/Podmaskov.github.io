@@ -1,9 +1,13 @@
 .header {
-  width: 100%;
+  width: 1440px;
   height: 700px;
   background-image: url(../img/heder_foto.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+@media screen and (max-width: 320px) {
+  .header__wrap {
+    max-width: 320px; } }
 
 /*# sourceMappingURL=style.css.map */

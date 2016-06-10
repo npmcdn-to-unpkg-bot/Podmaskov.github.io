@@ -1,7 +1,7 @@
 $colorpink: #ff4e50;
 
 .header {
-  width: 100%;
+  width: 1440px;
   height: 700px;
   background-image: url(../img/heder_foto.jpg);
   background-repeat: no-repeat;
@@ -11,5 +11,9 @@ $colorpink: #ff4e50;
 
 @media screen and (max-width: 320px) {
 
+  .header__wrap {
+    max-width: 320px;
+
+  }
 
 }
