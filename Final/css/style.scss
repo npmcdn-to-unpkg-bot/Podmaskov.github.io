@@ -1,19 +1,133 @@
 $colorpink: #ff4e50;
+$colorwhite: #fff;
+$montserrat: Montserrat, sans-serif;
+$roboto: roboto, sans-serif;
+.mainWrap {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
-.header {
-  width: 1440px;
-  height: 700px;
-  background-image: url(../img/heder_foto.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+  .header {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/heder_foto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-@media screen and (max-width: 320px) {
+    .header__wrap {
+      width: 100%;
 
-  .header__wrap {
-    max-width: 320px;
+      .header__logIn {
+        display: inline-block;
+        margin-left: 80px;
+        margin-top: 32px;
+        font-family: $montserrat;
+        font-size: 14px;
+        font-weight: bolder;
+          a{
+            color: $colorwhite;
+            text-decoration: none;
+        }
+      }
+
+      .header__signUp {
+        display: inline-block;
+        padding: 10px 15px 10px 15px;
+        border: 2px solid $colorwhite;
+        border-radius: 35px;
+        font-family: $montserrat;
+        font-size: 14px;
+        font-weight: bolder;
+          a {
+            color: $colorwhite;
+            text-decoration: none;
+          }
+      }
+
+      .header__logo {
+        width: 170px;
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $colorwhite;
+        font-family: $montserrat;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .slogan {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .slogan__ferstline {
+          margin-top: 40px;
+          color:  $colorwhite;;
+          line-height: 35px;
+          text-transform: uppercase;
+          text-align: center;
+          font-family: $montserrat;
+          font-size: 30px;
+          font-weight: bold;
+
+        }
+        .slogan__secondline {
+          width: 216px;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          color: $colorwhite;
+          text-align: center;
+          font-size: 18px;
+          font-family: $roboto;
+        }
+      }
+      .header__button {
+        width: 280px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        background-color: $colorpink;
+        border-radius: 35px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: $colorwhite;
+          line-height: 40px;
+          font-family: $montserrat;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  // Carusel
+  .jcarousel {
+    width: 320px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .jcarousel ul {
+    width: 2000px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+  }
+  .jcarousel li {
+    width: 300px;
+    height: 240px;
+    margin-left: 10px;
+    float: left;
 
   }
-
+  .jcarousel li img {
+    width: 300px;
+    height: 100%;
+  }
+  
 }
