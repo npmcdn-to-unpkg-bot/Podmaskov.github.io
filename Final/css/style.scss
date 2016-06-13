@@ -103,6 +103,13 @@ $roboto: roboto, sans-serif;
       }
     }
   }
+  .content__title {
+    margin: 20px 0 40px 30px;
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
   // Carusel
   .jcarousel {
     width: 320px;
@@ -110,7 +117,9 @@ $roboto: roboto, sans-serif;
     position: relative;
     overflow: hidden;
   }
-  .jcarousel ul {
+  .jcarousel__box1,
+  .jcarousel__box2,
+  .jcarousel__box3 {
     width: 2000px;
     overflow: hidden;
     margin-left: auto;
@@ -121,13 +130,160 @@ $roboto: roboto, sans-serif;
   .jcarousel li {
     width: 300px;
     height: 240px;
+    position: relative;
     margin-left: 10px;
     float: left;
 
   }
-  .jcarousel li img {
-    width: 300px;
-    height: 100%;
+  .box1__element1,
+  .box2__element1,
+  .box3__element1 {
+    position: relative;
+    background-image: url(../img/Slider_1.jpg);
+    background-size: cover;
+    .box1__step1,
+    .box2__step1,
+    .box3__step1 {
+      display: block;
+      width: 70px;
+      height: 20px;
+      margin-top: 70px;
+      margin-left: 20px;
+      border-radius: 25px;
+      background-color: $colorpink;
+      color: $colorwhite;
+      text-align: center;
+      text-decoration: none;
+      line-height: 20px;
+      letter-spacing: 3px;
+      font-family: $montserrat;
+      font-weight: normal;
+      font-size: 10px;
+    }
+    .box1__title1,
+    .box2__title1,
+    .box3__title1 {
+      width: 170px;
+      margin-top: 20px;
+      margin-left: 20px;
+      line-height: 24px;
+      color: $colorwhite;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .box1__paragraph1,
+    .box2__paragraph1,
+    .box3__paragraph1 {
+      width: 260px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $roboto;
+      font-size: 14px;
+      color: #cccccc;
+    }
   }
-  
+  .box1__element2,
+  .box2__element2,
+  .box3__element2 {
+    position: relative;
+    background-image: url(../img/Slider_2.jpg);
+    background-size: cover;
+    .box1__step2,
+    .box2__step2,
+    .box3__step2 {
+      display: block;
+      width: 70px;
+      height: 20px;
+      margin-top: 70px;
+      margin-left: 20px;
+      border-radius: 25px;
+      background-color: $colorpink;
+      color: $colorwhite;
+      text-align: center;
+      text-decoration: none;
+      line-height: 20px;
+      letter-spacing: 3px;
+      font-family: $montserrat;
+      font-weight: normal;
+      font-size: 10px;
+    }
+    .box1__title2,
+    .box2__title2,
+    .box3__title2 {
+      width: 170px;
+      margin-top: 20px;
+      margin-left: 20px;
+      line-height: 24px;
+      color: $colorwhite;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .box1__paragraph2,
+    .box2__paragraph2,
+    .box3__paragraph2 {
+      width: 260px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $roboto;
+      font-size: 14px;
+      color: #cccccc;
+    }
+  }
+  .box1__element3,
+  .box2__element3,
+  .box3__element3 {
+    position: relative;
+    background-image: url(../img/Slider_3.jpg);
+    background-size: cover;
+    .box1__step3,
+    .box2__step3,
+    .box3__step3 {
+      display: block;
+      width: 70px;
+      height: 20px;
+      margin-top: 70px;
+      margin-left: 20px;
+      border-radius: 25px;
+      background-color: $colorpink;
+      color: $colorwhite;
+      text-align: center;
+      text-decoration: none;
+      line-height: 20px;
+      letter-spacing: 3px;
+      font-family: $montserrat;
+      font-weight: normal;
+      font-size: 10px;
+    }
+    .box1__title3,
+    .box2__title3,
+    .box3__title3 {
+      width: 170px;
+      margin-top: 20px;
+      margin-left: 20px;
+      line-height: 24px;
+      color: $colorwhite;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .box1__paragraph3,
+    .box2__paragraph3,
+    .box3__paragraph3 {
+      width: 260px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $roboto;
+      font-size: 14px;
+      color: #cccccc;
+    }
+  }
+
+
+// end carusel
+
 }
