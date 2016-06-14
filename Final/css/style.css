@@ -292,5 +292,102 @@
       font-family: roboto, sans-serif;
       font-size: 14px;
       color: #cccccc; }
+  .mainWrap .meetPartners__wrap {
+    width: 100%; }
+    .mainWrap .meetPartners__wrap .meetPartners__title {
+      width: 260px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+      font-size: 22px;
+      font-weight: bold; }
+    .mainWrap .meetPartners__wrap .avatarbox1__foto,
+    .mainWrap .meetPartners__wrap .avatarbox2__foto,
+    .mainWrap .meetPartners__wrap .avatarbox3__foto,
+    .mainWrap .meetPartners__wrap .avatarbox4__foto {
+      position: relative;
+      width: 125px;
+      height: 125px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat; }
+    .mainWrap .meetPartners__wrap .avatarbox1__sprite,
+    .mainWrap .meetPartners__wrap .avatarbox2__sprite,
+    .mainWrap .meetPartners__wrap .avatarbox3__sprite,
+    .mainWrap .meetPartners__wrap .avatarbox4__sprite {
+      position: absolute;
+      right: 2px;
+      bottom: 10px;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/spritesheet.png); }
+    .mainWrap .meetPartners__wrap .avatarbox1__title,
+    .mainWrap .meetPartners__wrap .avatarbox2__title,
+    .mainWrap .meetPartners__wrap .avatarbox3__title,
+    .mainWrap .meetPartners__wrap .avatarbox4__title {
+      width: 110px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: bold; }
+    .mainWrap .meetPartners__wrap .avatarbox1__content,
+    .mainWrap .meetPartners__wrap .avatarbox2__content,
+    .mainWrap .meetPartners__wrap .avatarbox3__content,
+    .mainWrap .meetPartners__wrap .avatarbox4__content {
+      width: 215px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: #8f8f8f;
+      font-family: roboto, sans-serif;
+      font-weight: lighter;
+      font-size: 14px; }
+    .mainWrap .meetPartners__wrap .meetPartner__avatarbox1 {
+      width: 100%; }
+      .mainWrap .meetPartners__wrap .meetPartner__avatarbox1 .avatarbox1__foto {
+        background-image: url(../img/avatar_1.png); }
+        .mainWrap .meetPartners__wrap .meetPartner__avatarbox1 .avatarbox1__foto .avatarbox1__sprite {
+          background-position: -3px 0; }
+    .mainWrap .meetPartners__wrap .meetPartner__avatarbox2 {
+      width: 100%; }
+      .mainWrap .meetPartners__wrap .meetPartner__avatarbox2 .avatarbox2__foto {
+        background-image: url(../img/avatar_2.png); }
+        .mainWrap .meetPartners__wrap .meetPartner__avatarbox2 .avatarbox2__foto .avatarbox2__sprite {
+          background-position: -55px 0; }
+    .mainWrap .meetPartners__wrap .meetPartner__avatarbox3 {
+      width: 100%; }
+      .mainWrap .meetPartners__wrap .meetPartner__avatarbox3 .avatarbox3__foto {
+        background-image: url(../img/avatar_3.png); }
+        .mainWrap .meetPartners__wrap .meetPartner__avatarbox3 .avatarbox3__foto .avatarbox3__sprite {
+          background-position: -104px 0; }
+    .mainWrap .meetPartners__wrap .meetPartner__avatarbox4 {
+      width: 100%; }
+      .mainWrap .meetPartners__wrap .meetPartner__avatarbox4 .avatarbox4__foto {
+        background-image: url(../img/avatar_4.png); }
+        .mainWrap .meetPartners__wrap .meetPartner__avatarbox4 .avatarbox4__foto .avatarbox4__sprite {
+          background-position: 45px 0; }
+    .mainWrap .meetPartners__wrap .meetPartner__button {
+      display: block;
+      width: 280px;
+      height: 40px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      text-decoration: none;
+      line-height: 40px;
+      border: 2px solid #ff4e50;
+      border-radius: 25px;
+      color: #ff4e50;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

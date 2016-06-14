@@ -282,8 +282,124 @@ $roboto: roboto, sans-serif;
       color: #cccccc;
     }
   }
-
-
 // end carusel
+// meetPartners
+  .meetPartners__wrap {
+    width: 100%;
+    .meetPartners__title {
+      width: 260px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: $montserrat;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .avatarbox1__foto,
+    .avatarbox2__foto,
+    .avatarbox3__foto,
+    .avatarbox4__foto {
+      position: relative;
+      width: 125px;
+      height: 125px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+    }
+      .avatarbox1__sprite,
+      .avatarbox2__sprite,
+      .avatarbox3__sprite,
+      .avatarbox4__sprite {
+        position: absolute;
+        right: 2px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/spritesheet.png);
+      }
+    .avatarbox1__title,
+    .avatarbox2__title,
+    .avatarbox3__title,
+    .avatarbox4__title {
+      width: 110px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $montserrat;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .avatarbox1__content,
+    .avatarbox2__content,
+    .avatarbox3__content,
+    .avatarbox4__content {
+      width: 215px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: #8f8f8f;
+      font-family: $roboto;
+      font-weight: lighter;
+      font-size: 14px;
+    }
+
+    .meetPartner__avatarbox1 {
+      width: 100%;
+      .avatarbox1__foto {
+        background-image: url(../img/avatar_1.png);
+        .avatarbox1__sprite {
+          background-position: -3px 0;
+        }
+      }
+    }
+    .meetPartner__avatarbox2 {
+      width: 100%;
+      .avatarbox2__foto {
+        background-image: url(../img/avatar_2.png);
+        .avatarbox2__sprite {
+          background-position: -55px 0;
+        }
+      }
+    }
+    .meetPartner__avatarbox3 {
+      width: 100%;
+      .avatarbox3__foto {
+        background-image: url(../img/avatar_3.png);
+        .avatarbox3__sprite {
+          background-position: -104px 0;
+        }
+      }
+    }
+    .meetPartner__avatarbox4 {
+      width: 100%;
+      .avatarbox4__foto {
+        background-image: url(../img/avatar_4.png);
+        .avatarbox4__sprite {
+          background-position: 45px 0;
+        }
+      }
+    }
+    .meetPartner__button {
+      display: block;
+      width: 280px;
+      height: 40px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      text-decoration: none;
+      line-height: 40px;
+      border: 2px solid $colorpink;
+      border-radius: 25px;
+      color: $colorpink;
+      font-family: $montserrat;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
 
 }
