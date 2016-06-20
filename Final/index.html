@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script> -->
+  <script src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -148,6 +151,66 @@
     <a class="meetPartner__button" href="#">See other partners</a>
   </div>
 </div>
+<!-- Discover holiday  -->
+<h1 class="discover__title">Discover holiday activity ideas</h1>
+<div class="wrapForTemplate">
+
+<script type="text/template" id="template">
+  <div class="grid">
+   <div class="grid-sizer"></div>
+  <div class="grid-item">
+    <img src="<%= collectionOfPictures[0]%>" alt="<%=collectionOfTags[0]%>" />
+    <h1 class="grid-tag"><%=collectionOfTags[0]%></h1>
+  </div>
+  <div class="grid-item grid-item--width2">
+    <img src="<%= collectionOfPictures[1]%>" alt="<%=collectionOfTags[1]%>" />
+    <h1 class="grid-tag"><%=collectionOfTags[1]%></h1>
+  </div>
+  <div class="grid-item">
+    <img src="<%= collectionOfPictures[2]%>" alt="<%=collectionOfTags[2]%>" />
+    <h1 class="grid-tag"><%=collectionOfTags[2]%></h1>
+  </div>
+  <div class="grid-item">
+    <img src="<%= collectionOfPictures[3]%>" alt<%=collectionOfTags[3]%> />
+    <h1 class="grid-tag"><%=collectionOfTags[3]%></h1>
+  </div>
+  <div class="grid-item grid-item--width2">
+    <img src="<%= collectionOfPictures[4]%>" alt="<%=collectionOfTags[4]%>" />
+    <h1 class="grid-tag"><%=collectionOfTags[4]%></h1>
+  </div>
+  <div class="grid-item">
+    <img src="<%= collectionOfPictures[5]%>" alt="<%=collectionOfTags[5]%>" />
+    <h1 class="grid-tag"><%=collectionOfTags[5]%></h1>
+  </div>
+  <div class="grid-item">
+    <img src="<%= collectionOfPictures[6]%>" alt="<%=collectionOfTags[6]%>" />
+    <h1 class="grid-tag"><%=collectionOfTags[6]%></h1>
+  </div>
+</div>
+</script>
+</div>
+<!-- Discover holiday navgation  -->
+<div class="discover__nav">
+  <h1 class="nav__title">Discover holiday activity ideas</h1>
+  <p class="nav__description">Hi! What are your holiday interests?</p>
+  <input placeholder="Enter your interests" type="text" class="nav__value">
+  <div class="nav_button"><a href="">Search partners</a></div>
+</div>
+<footer class="footer__wrap">
+  <h1 class="footer__title">URLAUBSGLÜCK</h1>
+  <h3 class="footer__company">Company</h3>
+    <div class="footer__items">
+      <a href="#" class="footer__item1">About </a>
+      <a href="#" class="footer__item2">Contacts</a>
+      <a href="#" class="footer__item3">Press </a>
+      <a href="#" class="footer__item4">Blog</a>
+    </div>
+  <h3 class="footer__partners">Partners</h3>
+  <div class="footer__logo">
+    <p class="logo__designer">Designed by</p>
+    <img src="img/footerlogo.png" alt="logo" class="logo__img">
+  </div>
+</footer>
 </div>
 </body>
 </html>

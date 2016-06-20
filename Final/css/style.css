@@ -1,3 +1,52 @@
+.wrapForTemplate {
+  width: 100%; }
+
+.discover__title {
+  width: 275px;
+  height: 45px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 22px; }
+
+.grid-sizer,
+.grid-item {
+  width: 20%; }
+
+.grid {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto; }
+  .grid .grid-item {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 120px; }
+    .grid .grid-item .grid-tag {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      margin-left: -150px;
+      margin-right: -150px;
+      color: #fff;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 22px; }
+  .grid .grid-item img {
+    width: 300px;
+    height: 120px;
+    border-radius: 5px; }
+  .grid .grid-item--width2 {
+    width: 300px;
+    height: 120px; }
+
 .mainWrap {
   width: 320px;
   margin-left: auto;
@@ -389,5 +438,111 @@
       font-family: Montserrat, sans-serif;
       font-size: 14px;
       font-weight: bold; }
+  .mainWrap .discover__nav {
+    width: 100%;
+    margin-top: 40px; }
+    .mainWrap .discover__nav .nav__title {
+      width: 275px;
+      height: 45px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 22px; }
+    .mainWrap .discover__nav .nav__description {
+      width: 277px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: roboto, sans-serif;
+      font-weight: lighter;
+      font-size: 18px; }
+    .mainWrap .discover__nav .nav__value {
+      display: block;
+      width: 280px;
+      height: 40px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #cccccc;
+      border-radius: 5px; }
+    .mainWrap .discover__nav .nav_button {
+      width: 280px;
+      height: 40px;
+      margin-top: 20px;
+      margin-left: 20px;
+      cursor: pointer;
+      background-color: #ff4e50;
+      border-radius: 35px;
+      text-align: center; }
+      .mainWrap .discover__nav .nav_button a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 40px;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold; }
+  .mainWrap .footer__wrap {
+    width: 100%;
+    margin-top: 40px;
+    border-top: 3px solid #ff4e50; }
+    .mainWrap .footer__wrap .footer__title {
+      width: 145px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ff4e50;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 16px; }
+    .mainWrap .footer__wrap .footer__company {
+      width: 60px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 14px; }
+    .mainWrap .footer__wrap .footer__items {
+      width: 200px;
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: auto; }
+      .mainWrap .footer__wrap .footer__items .footer__item1,
+      .mainWrap .footer__wrap .footer__items .footer__item2,
+      .mainWrap .footer__wrap .footer__items .footer__item3,
+      .mainWrap .footer__wrap .footer__items .footer__item4 {
+        font-family: roboto, sans-serif;
+        font-weight: lighter;
+        font-size: 14px;
+        text-decoration: none; }
+      .mainWrap .footer__wrap .footer__items .footer__item1,
+      .mainWrap .footer__wrap .footer__items .footer__item2,
+      .mainWrap .footer__wrap .footer__items .footer__item3 {
+        margin-right: 11px; }
+    .mainWrap .footer__wrap .footer__partners {
+      width: 60px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 14px; }
+    .mainWrap .footer__wrap .footer__logo {
+      width: 130px;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto; }
+      .mainWrap .footer__wrap .footer__logo .logo__designer {
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        color: #ccc;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,63 @@ $colorpink: #ff4e50;
 $colorwhite: #fff;
 $montserrat: Montserrat, sans-serif;
 $roboto: roboto, sans-serif;
-.mainWrap {
+// Discover holiday
+.wrapForTemplate {
+  width: 100%;
+  // height: 910px;
+}
+.discover__title {
+  width: 275px;
+  height: 45px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: $montserrat;
+  font-weight: bold;
+  font-size: 22px;
+}
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+.grid {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  .grid-item {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 120px;
+    .grid-tag {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      margin-left: -150px;
+      margin-right: -150px;
+      color: $colorwhite;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+  .grid-item img {
+    width: 300px;
+    height: 120px;
+    border-radius: 5px;
+  }
+  .grid-item--width2 {
+    width: 300px;
+    height: 120px;
+  }
+}
+
+  .mainWrap {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -401,5 +457,126 @@ $roboto: roboto, sans-serif;
       font-weight: bold;
     }
   }
+  .discover__nav {
+    width: 100%;
+    margin-top: 40px;
+    .nav__title {
+      width: 275px;
+      height: 45px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .nav__description {
+      width: 277px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $roboto;
+      font-weight: lighter;;
+      font-size: 18px;
+    }
+    .nav__value {
+      display: block;
+      width: 280px;
+      height: 40px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+    }
+    .nav_button {
+      width: 280px;
+      height: 40px;
+      margin-top: 20px;
+      margin-left: 20px;
+      cursor: pointer;
+      background-color: $colorpink;
+      border-radius: 35px;
+      text-align: center;
 
+      a {
+        text-decoration: none;
+        color: $colorwhite;
+        line-height: 40px;
+        font-family: $montserrat;
+        font-weight: bold;
+      }
+    }
+  }
+  .footer__wrap {
+    width: 100%;
+    margin-top: 40px;
+    border-top: 3px solid $colorpink;
+    .footer__title {
+      width: 145px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      color: $colorpink;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .footer__company {
+      width: 60px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .footer__items {
+      width: 200px;
+      margin-top: 7px;
+      margin-left: auto;
+      margin-right: auto;
+      .footer__item1,
+      .footer__item2,
+      .footer__item3,
+      .footer__item4 {
+        font-family: $roboto;
+        font-weight: lighter;;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .footer__item1,
+      .footer__item2,
+      .footer__item3 {
+        margin-right: 11px;
+      }
+    }
+    .footer__partners {
+      width: 60px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .footer__logo {
+      width: 130px;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      .logo__designer {
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        color: #ccc;
+        font-family: $montserrat;
+        font-weight: bold;
+        font-size: 10px;
+      }
+    }
+  }
 }
