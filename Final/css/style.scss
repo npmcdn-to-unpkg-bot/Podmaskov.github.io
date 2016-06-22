@@ -580,3 +580,9 @@ $roboto: roboto, sans-serif;
     }
   }
 }
+
+@media (min-width: 321px) {
+  .mainWrap {
+     width: 768px;
+   }
+}
