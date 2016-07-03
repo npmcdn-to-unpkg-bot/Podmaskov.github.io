@@ -48,7 +48,7 @@
     height: 120px; }
 
 .mainWrap {
-  width: 320px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto; }
   .mainWrap .header {
@@ -91,7 +91,7 @@
         font-weight: bold;
         font-size: 20px; }
       .mainWrap .header .header__wrap .slogan {
-        width: 280px;
+        max-width: 280px;
         margin-left: auto;
         margin-right: auto; }
         .mainWrap .header .header__wrap .slogan .slogan__ferstline {
@@ -104,7 +104,7 @@
           font-size: 30px;
           font-weight: bold; }
         .mainWrap .header .header__wrap .slogan .slogan__secondline {
-          width: 216px;
+          max-width: 216px;
           margin-top: 20px;
           margin-left: auto;
           margin-right: auto;
@@ -133,7 +133,7 @@
     font-weight: bold;
     font-size: 22px; }
   .mainWrap .jcarousel {
-    width: 320px;
+    max-width: 320px;
     margin-top: 10px;
     position: relative;
     overflow: hidden; }
@@ -547,6 +547,57 @@
 
 @media (min-width: 321px) {
   .mainWrap {
-    width: 768px; } }
+    max-width: 768px; }
+    .mainWrap .header {
+      max-width: 768px; }
+      .mainWrap .header .header__wrap {
+        overflow: hidden;
+        position: relative;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 675px;
+        max-height: 430px; }
+        .mainWrap .header .header__wrap .header__logIn {
+          margin: 0px;
+          position: absolute;
+          right: 110px;
+          top: 50px; }
+        .mainWrap .header .header__wrap .header__signUp {
+          position: absolute;
+          right: 0px;
+          top: 40px; }
+        .mainWrap .header .header__wrap .header__logo {
+          margin: 0px; }
+        .mainWrap .header .header__wrap .slogan {
+          max-width: 597px; }
+          .mainWrap .header .header__wrap .slogan .slogan__ferstline {
+            font-size: 52px;
+            line-height: 60px; }
+          .mainWrap .header .header__wrap .slogan .slogan__secondline {
+            max-width: 500px;
+            font-size: 30px; }
+        .mainWrap .header .header__wrap .header__button {
+          margin-top: 40px;
+          margin-left: auto;
+          margin-right: auto; }
+    .mainWrap .content {
+      max-width: 768px; }
+      .mainWrap .content .content__wrap {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto; }
+        .mainWrap .content .content__wrap .content__title {
+          width: 290px;
+          margin-top: 100px;
+          margin-bottom: 40px;
+          margin-left: auto;
+          margin-right: auto; }
+        .mainWrap .content .content__wrap .jcarousel {
+          float: left;
+          max-width: 233px;
+          height: 405px; }
+          .mainWrap .content .content__wrap .jcarousel li {
+            height: 405px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,11 +2,11 @@
 $(function() {
     $('.jcarousel').jcarousel({
         wrap: 'circular'
-    }).jcarouselAutoscroll({
-            interval: 3000,
-            target: '+=1',
-            autostart: true
-        });
+    // }).jcarouselAutoscroll({
+    //         interval: 3000,
+    //         target: '+=1',
+    //         autostart: true
+    //     });
 });
 // request
 var collectionOfPictures = [];

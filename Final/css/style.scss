@@ -59,7 +59,7 @@ $roboto: roboto, sans-serif;
 }
 
   .mainWrap {
-  width: 320px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 
@@ -113,7 +113,7 @@ $roboto: roboto, sans-serif;
       }
 
       .slogan {
-        width: 280px;
+        max-width: 280px;
         margin-left: auto;
         margin-right: auto;
 
@@ -129,7 +129,7 @@ $roboto: roboto, sans-serif;
 
         }
         .slogan__secondline {
-          width: 216px;
+          max-width: 216px;
           margin-top: 20px;
           margin-left: auto;
           margin-right: auto;
@@ -168,7 +168,7 @@ $roboto: roboto, sans-serif;
 
   // Carusel
   .jcarousel {
-    width: 320px;
+    max-width: 320px;
     margin-top: 10px;
     position: relative;
     overflow: hidden;
@@ -580,9 +580,73 @@ $roboto: roboto, sans-serif;
     }
   }
 }
-
 @media (min-width: 321px) {
   .mainWrap {
-     width: 768px;
-   }
+     max-width: 768px;
+     .header {
+       max-width: 768px;
+       .header__wrap {
+         overflow: hidden;
+         position: relative;
+         padding-top: 40px;
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 675px;
+         max-height: 430px;
+         .header__logIn {
+           margin: 0px;
+           position: absolute;
+           right: 110px;
+           top: 50px;
+         }
+         .header__signUp {
+           position: absolute;
+           right: 0px;
+           top: 40px;
+         }
+         .header__logo {
+           margin: 0px;
+         }
+         .slogan {
+           max-width: 597px;
+           .slogan__ferstline {
+             font-size: 52px;
+             line-height: 60px;
+           }
+           .slogan__secondline {
+             max-width: 500px;
+             font-size: 30px;
+           }
+         }
+         .header__button {
+           margin-top: 40px;
+           margin-left: auto;
+           margin-right: auto;
+         }
+       }
+     }
+    .content {
+      max-width: 768px;
+      .content__wrap {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        .content__title {
+          width: 290px;
+          margin-top: 100px;
+          margin-bottom: 40px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .jcarousel {
+          float: left;
+          max-width: 233px;
+          height: 405px;
+          li {
+            height: 405px;
+          }
+        }
+      }
+    }
+  }
 }
